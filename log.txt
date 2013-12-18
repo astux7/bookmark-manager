@@ -1,0 +1,1309 @@
+ ~ (0.000320) SET backslash_quote = off
+ ~ (0.000108) SET standard_conforming_strings = on
+ ~ (0.000123) SET client_min_messages = warning
+ ~ (0.000078) SET client_min_messages = warning
+ ~ (0.000080) SET client_min_messages = warning
+ ~ (0.000536) SELECT current_schema()
+ ~ (0.005640) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000297) RESET client_min_messages
+ ~ (0.000289) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000079) SET client_min_messages = warning
+ ~ (0.010361) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003342) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003439) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000289) RESET client_min_messages
+ ~ (0.000422) SHOW server_version
+ ~ (0.001977)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.003233) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000294) SHOW server_version
+ ~ default: begin
+ ~ (0.000100) BEGIN
+ ~ (0.000932) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ default: rollback
+ ~ (0.000252) ROLLBACK
+ ~ default: begin
+ ~ (0.000106) BEGIN
+ ~ (0.000445) SELECT COUNT(*) FROM "links"
+ ~ (0.000421) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000290) SELECT COUNT(*) FROM "links"
+ ~ (0.000652) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000382) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000239) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000113) ROLLBACK
+ ~ (0.000254) SET backslash_quote = off
+ ~ (0.000129) SET standard_conforming_strings = on
+ ~ (0.000107) SET client_min_messages = warning
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.000079) SET client_min_messages = warning
+ ~ (0.000588) SELECT current_schema()
+ ~ (0.005493) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000208) RESET client_min_messages
+ ~ (0.000279) SET backslash_quote = off
+ ~ (0.000101) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.009609) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003515) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.004591) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000366) RESET client_min_messages
+ ~ (0.000466) SHOW server_version
+ ~ (0.002020)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.003153) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000202) SHOW server_version
+ ~ default: begin
+ ~ (0.000228) BEGIN
+ ~ (0.000965) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ default: rollback
+ ~ (0.000359) ROLLBACK
+ ~ default: begin
+ ~ (0.000164) BEGIN
+ ~ (0.000444) SELECT COUNT(*) FROM "links"
+ ~ (0.000395) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000285) SELECT COUNT(*) FROM "links"
+ ~ (0.000717) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000341) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000214) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000111) ROLLBACK
+ ~ (0.000288) SET backslash_quote = off
+ ~ (0.000112) SET standard_conforming_strings = on
+ ~ (0.000078) SET client_min_messages = warning
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.000537) SELECT current_schema()
+ ~ (0.005377) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000127) RESET client_min_messages
+ ~ (0.000292) SET backslash_quote = off
+ ~ (0.000149) SET standard_conforming_strings = on
+ ~ (0.000081) SET client_min_messages = warning
+ ~ (0.009781) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003277) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003339) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000352) RESET client_min_messages
+ ~ (0.000515) SHOW server_version
+ ~ (0.001984)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.004921) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000281) SHOW server_version
+ ~ default: begin
+ ~ (0.000172) BEGIN
+ ~ (0.000501) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000465) ROLLBACK
+ ~ default: begin
+ ~ (0.000171) BEGIN
+ ~ (0.000924) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ default: rollback
+ ~ (0.000434) ROLLBACK
+ ~ default: begin
+ ~ (0.000285) BEGIN
+ ~ (0.000369) SELECT COUNT(*) FROM "links"
+ ~ (0.000396) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000329) SELECT COUNT(*) FROM "links"
+ ~ (0.000572) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000387) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000208) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000108) ROLLBACK
+ ~ (0.000285) SET backslash_quote = off
+ ~ (0.000096) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.000091) SET client_min_messages = warning
+ ~ (0.000080) SET client_min_messages = warning
+ ~ (0.000519) SELECT current_schema()
+ ~ (0.005214) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000188) RESET client_min_messages
+ ~ (0.000261) SET backslash_quote = off
+ ~ (0.000093) SET standard_conforming_strings = on
+ ~ (0.000079) SET client_min_messages = warning
+ ~ (0.009759) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003282) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.004400) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000143) RESET client_min_messages
+ ~ (0.000507) SHOW server_version
+ ~ (0.001982)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.004882) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000266) SHOW server_version
+ ~ default: begin
+ ~ (0.000097) BEGIN
+ ~ (0.000570) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000171) ROLLBACK
+ ~ default: begin
+ ~ (0.000146) BEGIN
+ ~ (0.000902) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ default: rollback
+ ~ (0.000370) ROLLBACK
+ ~ default: begin
+ ~ (0.000276) BEGIN
+ ~ (0.000424) SELECT COUNT(*) FROM "links"
+ ~ (0.000486) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000195) SELECT COUNT(*) FROM "links"
+ ~ (0.000601) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000407) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000345) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000114) ROLLBACK
+ ~ (0.000303) SET backslash_quote = off
+ ~ (0.000111) SET standard_conforming_strings = on
+ ~ (0.000094) SET client_min_messages = warning
+ ~ (0.000111) SET client_min_messages = warning
+ ~ (0.000086) SET client_min_messages = warning
+ ~ (0.006470) SELECT current_schema()
+ ~ (0.031628) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.049520) CREATE TABLE "links" ("id" SERIAL NOT NULL, "title" VARCHAR(50), "url" VARCHAR(50), PRIMARY KEY("id"))
+ ~ (0.000250) RESET client_min_messages
+ ~ (0.000117) RESET client_min_messages
+ ~ (0.000258) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.000099) SET client_min_messages = warning
+ ~ (0.000079) SET client_min_messages = warning
+ ~ (0.000512) SELECT current_schema()
+ ~ (0.005250) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000293) RESET client_min_messages
+ ~ (0.000349) SET backslash_quote = off
+ ~ (0.000097) SET standard_conforming_strings = on
+ ~ (0.000078) SET client_min_messages = warning
+ ~ (0.020496) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003845) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003225) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000135) RESET client_min_messages
+ ~ (0.000292) SET backslash_quote = off
+ ~ (0.000096) SET standard_conforming_strings = on
+ ~ (0.000078) SET client_min_messages = warning
+ ~ (0.000074) SET client_min_messages = warning
+ ~ (0.000078) SET client_min_messages = warning
+ ~ (0.000545) SELECT current_schema()
+ ~ (0.005465) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000206) RESET client_min_messages
+ ~ (0.000300) SET backslash_quote = off
+ ~ (0.000101) SET standard_conforming_strings = on
+ ~ (0.000113) SET client_min_messages = warning
+ ~ (0.011356) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.004307) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003515) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000280) RESET client_min_messages
+ ~ (0.000333) SET backslash_quote = off
+ ~ (0.000111) SET standard_conforming_strings = on
+ ~ (0.000088) SET client_min_messages = warning
+ ~ (0.000082) SET client_min_messages = warning
+ ~ (0.000084) SET client_min_messages = warning
+ ~ (0.000557) SELECT current_schema()
+ ~ (0.005927) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000311) RESET client_min_messages
+ ~ (0.000295) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.009727) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003311) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.004310) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000255) RESET client_min_messages
+ ~ (0.000387) SHOW server_version
+ ~ (0.001861)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.005288) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000226) SHOW server_version
+ ~ default: begin
+ ~ (0.000095) BEGIN
+ ~ (0.000681) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000227) ROLLBACK
+ ~ default: begin
+ ~ (0.000146) BEGIN
+ ~ (0.001421) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ default: rollback
+ ~ (0.000428) ROLLBACK
+ ~ default: begin
+ ~ (0.000231) BEGIN
+ ~ (0.000580) SELECT COUNT(*) FROM "links"
+ ~ (0.000409) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000337) SELECT COUNT(*) FROM "links"
+ ~ (0.000625) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000317) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000275) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000217) ROLLBACK
+ ~ (0.000232) SET backslash_quote = off
+ ~ (0.000099) SET standard_conforming_strings = on
+ ~ (0.000116) SET client_min_messages = warning
+ ~ (0.000081) SET client_min_messages = warning
+ ~ (0.000095) SET client_min_messages = warning
+ ~ (0.000595) SELECT current_schema()
+ ~ (0.005487) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000195) RESET client_min_messages
+ ~ (0.000305) SET backslash_quote = off
+ ~ (0.000093) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.009735) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003600) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003256) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000241) RESET client_min_messages
+ ~ (0.002273) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.001379) INSERT INTO "links" ("title", "url") VALUES ('google', 'google.com') RETURNING "id"
+ ~ (0.000791) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.002433) INSERT INTO "links" ("title", "url") VALUES ('', '') RETURNING "id"
+ ~ (0.000487) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.002190) INSERT INTO "links" ("title", "url") VALUES ('', '') RETURNING "id"
+ ~ (0.000675) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.002312) INSERT INTO "links" ("title", "url") VALUES ('', '') RETURNING "id"
+ ~ (0.000471) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.002151) INSERT INTO "links" ("title", "url") VALUES ('', '') RETURNING "id"
+ ~ (0.000433) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.002079) INSERT INTO "links" ("title", "url") VALUES ('', '') RETURNING "id"
+ ~ (0.000689) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000223) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.000078) SET client_min_messages = warning
+ ~ (0.000514) SELECT current_schema()
+ ~ (0.005238) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000253) RESET client_min_messages
+ ~ (0.000263) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.009551) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003227) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003343) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000239) RESET client_min_messages
+ ~ (0.000502) SHOW server_version
+ ~ (0.001920)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.003144) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000297) SHOW server_version
+ ~ default: begin
+ ~ (0.000106) BEGIN
+ ~ (0.000661) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000272) ROLLBACK
+ ~ default: begin
+ ~ (0.000175) BEGIN
+ ~ (0.000829) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ default: rollback
+ ~ (0.000298) ROLLBACK
+ ~ default: begin
+ ~ (0.000177) BEGIN
+ ~ (0.000375) SELECT COUNT(*) FROM "links"
+ ~ (0.000291) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000218) SELECT COUNT(*) FROM "links"
+ ~ (0.000579) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000390) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000618) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000274) ROLLBACK
+ ~ (0.000289) SET backslash_quote = off
+ ~ (0.000097) SET standard_conforming_strings = on
+ ~ (0.000077) SET client_min_messages = warning
+ ~ (0.000088) SET client_min_messages = warning
+ ~ (0.000089) SET client_min_messages = warning
+ ~ (0.000527) SELECT current_schema()
+ ~ (0.005289) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000205) RESET client_min_messages
+ ~ (0.000282) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000078) SET client_min_messages = warning
+ ~ (0.009635) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003441) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003173) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000205) RESET client_min_messages
+ ~ (0.000509) SHOW server_version
+ ~ (0.002017)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.005059) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000305) SHOW server_version
+ ~ default: begin
+ ~ (0.000101) BEGIN
+ ~ (0.000552) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000402) ROLLBACK
+ ~ default: begin
+ ~ (0.000166) BEGIN
+ ~ (0.000781) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ default: rollback
+ ~ (0.000432) ROLLBACK
+ ~ default: begin
+ ~ (0.000160) BEGIN
+ ~ (0.000389) SELECT COUNT(*) FROM "links"
+ ~ (0.000401) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000324) SELECT COUNT(*) FROM "links"
+ ~ (0.000607) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000330) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000215) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000161) ROLLBACK
+ ~ (0.000251) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.000078) SET client_min_messages = warning
+ ~ (0.000522) SELECT current_schema()
+ ~ (0.005300) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000190) RESET client_min_messages
+ ~ (0.000270) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.009777) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003538) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003548) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000363) RESET client_min_messages
+ ~ (0.001249) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000292) SET backslash_quote = off
+ ~ (0.000096) SET standard_conforming_strings = on
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.000072) SET client_min_messages = warning
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.000607) SELECT current_schema()
+ ~ (0.005293) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000172) RESET client_min_messages
+ ~ (0.000255) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.009671) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003231) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003164) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000238) RESET client_min_messages
+ ~ (0.000503) SHOW server_version
+ ~ (0.002017)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.007660) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000275) SHOW server_version
+ ~ default: begin
+ ~ (0.000122) BEGIN
+ ~ (0.000554) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000458) ROLLBACK
+ ~ default: begin
+ ~ (0.000135) BEGIN
+ ~ (0.000848) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ default: rollback
+ ~ (0.000383) ROLLBACK
+ ~ default: begin
+ ~ (0.000227) BEGIN
+ ~ (0.000442) SELECT COUNT(*) FROM "links"
+ ~ (0.000376) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000296) SELECT COUNT(*) FROM "links"
+ ~ (0.000604) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000320) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000186) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000112) ROLLBACK
+ ~ (0.000285) SET backslash_quote = off
+ ~ (0.000096) SET standard_conforming_strings = on
+ ~ (0.000078) SET client_min_messages = warning
+ ~ (0.000078) SET client_min_messages = warning
+ ~ (0.000078) SET client_min_messages = warning
+ ~ (0.000530) SELECT current_schema()
+ ~ (0.005152) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000198) RESET client_min_messages
+ ~ (0.000357) SET backslash_quote = off
+ ~ (0.000105) SET standard_conforming_strings = on
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.009647) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003545) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003489) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000238) RESET client_min_messages
+ ~ (0.000468) SHOW server_version
+ ~ (0.001932)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.004831) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000268) SHOW server_version
+ ~ default: begin
+ ~ (0.000101) BEGIN
+ ~ (0.000620) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000366) ROLLBACK
+ ~ default: begin
+ ~ (0.000154) BEGIN
+ ~ (0.000904) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ default: rollback
+ ~ (0.000433) ROLLBACK
+ ~ default: begin
+ ~ (0.000232) BEGIN
+ ~ (0.000368) SELECT COUNT(*) FROM "links"
+ ~ (0.000347) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000315) SELECT COUNT(*) FROM "links"
+ ~ (0.000577) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000444) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000192) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000113) ROLLBACK
+ ~ (0.000258) SET backslash_quote = off
+ ~ (0.000095) SET standard_conforming_strings = on
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.000074) SET client_min_messages = warning
+ ~ (0.000077) SET client_min_messages = warning
+ ~ (0.000515) SELECT current_schema()
+ ~ (0.005152) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000200) RESET client_min_messages
+ ~ (0.000290) SET backslash_quote = off
+ ~ (0.000093) SET standard_conforming_strings = on
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.009732) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003430) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003273) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000239) RESET client_min_messages
+ ~ (0.001216) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000286) SET backslash_quote = off
+ ~ (0.000099) SET standard_conforming_strings = on
+ ~ (0.000078) SET client_min_messages = warning
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.000079) SET client_min_messages = warning
+ ~ (0.000520) SELECT current_schema()
+ ~ (0.006912) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000236) RESET client_min_messages
+ ~ (0.000298) SET backslash_quote = off
+ ~ (0.000095) SET standard_conforming_strings = on
+ ~ (0.000080) SET client_min_messages = warning
+ ~ (0.009600) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003538) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003506) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000333) RESET client_min_messages
+ ~ (0.000320) SET backslash_quote = off
+ ~ (0.000097) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.000080) SET client_min_messages = warning
+ ~ (0.000528) SELECT current_schema()
+ ~ (0.005205) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000295) RESET client_min_messages
+ ~ (0.000287) SET backslash_quote = off
+ ~ (0.000093) SET standard_conforming_strings = on
+ ~ (0.000079) SET client_min_messages = warning
+ ~ (0.009811) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003402) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003437) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000208) RESET client_min_messages
+ ~ (0.000502) SHOW server_version
+ ~ (0.001946)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.005776) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000299) SHOW server_version
+ ~ default: begin
+ ~ (0.000098) BEGIN
+ ~ (0.000579) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000505) ROLLBACK
+ ~ default: begin
+ ~ (0.000121) BEGIN
+ ~ (0.000782) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ default: rollback
+ ~ (0.000431) ROLLBACK
+ ~ default: begin
+ ~ (0.000258) BEGIN
+ ~ (0.000338) SELECT COUNT(*) FROM "links"
+ ~ (0.000406) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000188) SELECT COUNT(*) FROM "links"
+ ~ (0.000617) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000296) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000185) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000273) ROLLBACK
+ ~ (0.000330) SET backslash_quote = off
+ ~ (0.000095) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.000073) SET client_min_messages = warning
+ ~ (0.000078) SET client_min_messages = warning
+ ~ (0.000518) SELECT current_schema()
+ ~ (0.005158) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000188) RESET client_min_messages
+ ~ (0.000245) SET backslash_quote = off
+ ~ (0.000097) SET standard_conforming_strings = on
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.009724) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003251) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003205) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000233) RESET client_min_messages
+ ~ (0.001139) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000282) SET backslash_quote = off
+ ~ (0.000096) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.000085) SET client_min_messages = warning
+ ~ (0.000526) SELECT current_schema()
+ ~ (0.005371) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000191) RESET client_min_messages
+ ~ (0.000265) SET backslash_quote = off
+ ~ (0.000093) SET standard_conforming_strings = on
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.009649) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003461) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003535) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000146) RESET client_min_messages
+ ~ (0.000342) SHOW server_version
+ ~ (0.001812)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.005077) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000265) SHOW server_version
+ ~ default: begin
+ ~ (0.000100) BEGIN
+ ~ (0.000603) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000394) ROLLBACK
+ ~ default: begin
+ ~ (0.000182) BEGIN
+ ~ (0.001157) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ default: rollback
+ ~ (0.000358) ROLLBACK
+ ~ default: begin
+ ~ (0.000253) BEGIN
+ ~ (0.000365) SELECT COUNT(*) FROM "links"
+ ~ (0.000334) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000247) SELECT COUNT(*) FROM "links"
+ ~ (0.000919) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000527) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000393) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000116) ROLLBACK
+ ~ (0.000278) SET backslash_quote = off
+ ~ (0.000096) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.000079) SET client_min_messages = warning
+ ~ (0.000532) SELECT current_schema()
+ ~ (0.005206) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000227) RESET client_min_messages
+ ~ (0.000247) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000073) SET client_min_messages = warning
+ ~ (0.009847) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003516) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003191) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000295) RESET client_min_messages
+ ~ (0.000488) SHOW server_version
+ ~ (0.001994)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.004598) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000260) SHOW server_version
+ ~ default: begin
+ ~ (0.000100) BEGIN
+ ~ (0.000629) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000447) ROLLBACK
+ ~ default: begin
+ ~ (0.000165) BEGIN
+ ~ (0.000825) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ default: rollback
+ ~ (0.000421) ROLLBACK
+ ~ default: begin
+ ~ (0.000144) BEGIN
+ ~ (0.000338) SELECT COUNT(*) FROM "links"
+ ~ (0.000411) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000262) SELECT COUNT(*) FROM "links"
+ ~ (0.000862) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000457) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000395) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000143) ROLLBACK
+ ~ (0.000261) SET backslash_quote = off
+ ~ (0.000104) SET standard_conforming_strings = on
+ ~ (0.000109) SET client_min_messages = warning
+ ~ (0.000085) SET client_min_messages = warning
+ ~ (0.000079) SET client_min_messages = warning
+ ~ (0.000574) SELECT current_schema()
+ ~ (0.005336) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000193) RESET client_min_messages
+ ~ (0.000221) SET backslash_quote = off
+ ~ (0.000089) SET standard_conforming_strings = on
+ ~ (0.000074) SET client_min_messages = warning
+ ~ (0.009900) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003201) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003428) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000240) RESET client_min_messages
+ ~ (0.000512) SHOW server_version
+ ~ (0.002561)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.004675) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000293) SHOW server_version
+ ~ default: begin
+ ~ (0.000138) BEGIN
+ ~ (0.000540) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000402) ROLLBACK
+ ~ default: begin
+ ~ (0.000198) BEGIN
+ ~ (0.000814) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ default: rollback
+ ~ (0.000354) ROLLBACK
+ ~ default: begin
+ ~ (0.000131) BEGIN
+ ~ (0.000336) SELECT COUNT(*) FROM "links"
+ ~ (0.000445) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000202) SELECT COUNT(*) FROM "links"
+ ~ (0.001073) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000351) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000202) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000142) ROLLBACK
+ ~ (0.000318) SET backslash_quote = off
+ ~ (0.000110) SET standard_conforming_strings = on
+ ~ (0.000077) SET client_min_messages = warning
+ ~ (0.000073) SET client_min_messages = warning
+ ~ (0.000077) SET client_min_messages = warning
+ ~ (0.000545) SELECT current_schema()
+ ~ (0.005366) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000150) RESET client_min_messages
+ ~ (0.000264) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.009615) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003500) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003318) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000293) RESET client_min_messages
+ ~ (0.000518) SHOW server_version
+ ~ (0.002015)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.004586) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000265) SHOW server_version
+ ~ default: begin
+ ~ (0.000101) BEGIN
+ ~ (0.000577) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000471) ROLLBACK
+ ~ default: begin
+ ~ (0.000166) BEGIN
+ ~ (0.000772) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ default: rollback
+ ~ (0.000358) ROLLBACK
+ ~ default: begin
+ ~ (0.000179) BEGIN
+ ~ (0.000346) SELECT COUNT(*) FROM "links"
+ ~ (0.000346) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000189) SELECT COUNT(*) FROM "links"
+ ~ (0.000577) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000374) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000249) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000157) ROLLBACK
+ ~ (0.000301) SET backslash_quote = off
+ ~ (0.000109) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.000073) SET client_min_messages = warning
+ ~ (0.000077) SET client_min_messages = warning
+ ~ (0.000533) SELECT current_schema()
+ ~ (0.005246) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000162) RESET client_min_messages
+ ~ (0.000290) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000074) SET client_min_messages = warning
+ ~ (0.009537) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003524) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003466) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000290) RESET client_min_messages
+ ~ (0.000585) SHOW server_version
+ ~ (0.002316)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.004989) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000254) SHOW server_version
+ ~ default: begin
+ ~ (0.000100) BEGIN
+ ~ (0.000550) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000362) ROLLBACK
+ ~ default: begin
+ ~ (0.000160) BEGIN
+ ~ (0.000862) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ default: rollback
+ ~ (0.000417) ROLLBACK
+ ~ default: begin
+ ~ (0.000114) BEGIN
+ ~ (0.000515) SELECT COUNT(*) FROM "links"
+ ~ (0.000400) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000284) SELECT COUNT(*) FROM "links"
+ ~ (0.000775) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000407) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000192) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000158) ROLLBACK
+ ~ (0.000245) SET backslash_quote = off
+ ~ (0.000092) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.000074) SET client_min_messages = warning
+ ~ (0.000078) SET client_min_messages = warning
+ ~ (0.000521) SELECT current_schema()
+ ~ (0.005193) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000152) RESET client_min_messages
+ ~ (0.000265) SET backslash_quote = off
+ ~ (0.000095) SET standard_conforming_strings = on
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.009581) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003532) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003523) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000285) RESET client_min_messages
+ ~ (0.000404) SHOW server_version
+ ~ (0.001986)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.005257) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000269) SHOW server_version
+ ~ default: begin
+ ~ (0.000126) BEGIN
+ ~ (0.000540) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000232) ROLLBACK
+ ~ default: begin
+ ~ (0.000162) BEGIN
+ ~ (0.000751) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ default: rollback
+ ~ (0.000376) ROLLBACK
+ ~ default: begin
+ ~ (0.000221) BEGIN
+ ~ (0.000340) SELECT COUNT(*) FROM "links"
+ ~ (0.000417) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000187) SELECT COUNT(*) FROM "links"
+ ~ (0.000571) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000303) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000191) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000112) ROLLBACK
+ ~ (0.000255) SET backslash_quote = off
+ ~ (0.000100) SET standard_conforming_strings = on
+ ~ (0.000081) SET client_min_messages = warning
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.000078) SET client_min_messages = warning
+ ~ (0.000528) SELECT current_schema()
+ ~ (0.005213) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000142) RESET client_min_messages
+ ~ (0.000367) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.009745) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003210) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003261) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000232) RESET client_min_messages
+ ~ (0.000422) SHOW server_version
+ ~ (0.002512)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.004490) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000227) SHOW server_version
+ ~ default: begin
+ ~ (0.000104) BEGIN
+ ~ (0.000629) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000208) ROLLBACK
+ ~ default: begin
+ ~ (0.000139) BEGIN
+ ~ (0.000886) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ default: rollback
+ ~ (0.000297) ROLLBACK
+ ~ default: begin
+ ~ (0.000215) BEGIN
+ ~ (0.000572) SELECT COUNT(*) FROM "links"
+ ~ (0.000578) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000351) SELECT COUNT(*) FROM "links"
+ ~ (0.000713) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000375) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000334) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000158) ROLLBACK
+ ~ (0.000285) SET backslash_quote = off
+ ~ (0.000099) SET standard_conforming_strings = on
+ ~ (0.000077) SET client_min_messages = warning
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.000078) SET client_min_messages = warning
+ ~ (0.000514) SELECT current_schema()
+ ~ (0.005163) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000298) RESET client_min_messages
+ ~ (0.000234) SET backslash_quote = off
+ ~ (0.000092) SET standard_conforming_strings = on
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.009599) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003344) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003440) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000275) RESET client_min_messages
+ ~ (0.000508) SHOW server_version
+ ~ (0.001997)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.005545) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000272) SHOW server_version
+ ~ default: begin
+ ~ (0.000100) BEGIN
+ ~ (0.000533) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000471) ROLLBACK
+ ~ default: begin
+ ~ (0.000175) BEGIN
+ ~ (0.000746) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ default: rollback
+ ~ (0.000399) ROLLBACK
+ ~ default: begin
+ ~ (0.000187) BEGIN
+ ~ (0.000404) SELECT COUNT(*) FROM "links"
+ ~ (0.000329) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000251) SELECT COUNT(*) FROM "links"
+ ~ (0.000573) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000336) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000264) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000112) ROLLBACK
+ ~ (0.000306) SET backslash_quote = off
+ ~ (0.000109) SET standard_conforming_strings = on
+ ~ (0.000100) SET client_min_messages = warning
+ ~ (0.000100) SET client_min_messages = warning
+ ~ (0.000080) SET client_min_messages = warning
+ ~ (0.000585) SELECT current_schema()
+ ~ (0.005380) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000295) RESET client_min_messages
+ ~ (0.000257) SET backslash_quote = off
+ ~ (0.000096) SET standard_conforming_strings = on
+ ~ (0.000078) SET client_min_messages = warning
+ ~ (0.009667) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003595) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003490) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000292) RESET client_min_messages
+ ~ (0.000516) SHOW server_version
+ ~ (0.001887)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.004616) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000257) SHOW server_version
+ ~ default: begin
+ ~ (0.000103) BEGIN
+ ~ (0.000486) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000223) ROLLBACK
+ ~ default: begin
+ ~ (0.000094) BEGIN
+ ~ (0.000775) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ default: rollback
+ ~ (0.000352) ROLLBACK
+ ~ default: begin
+ ~ (0.000140) BEGIN
+ ~ (0.000385) SELECT COUNT(*) FROM "links"
+ ~ (0.000385) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000197) SELECT COUNT(*) FROM "links"
+ ~ (0.000611) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000288) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000189) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000110) ROLLBACK
+ ~ (0.000267) SET backslash_quote = off
+ ~ (0.000095) SET standard_conforming_strings = on
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.000074) SET client_min_messages = warning
+ ~ (0.000077) SET client_min_messages = warning
+ ~ (0.000517) SELECT current_schema()
+ ~ (0.005217) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000190) RESET client_min_messages
+ ~ (0.000264) SET backslash_quote = off
+ ~ (0.000148) SET standard_conforming_strings = on
+ ~ (0.000111) SET client_min_messages = warning
+ ~ (0.009737) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003468) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003414) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000198) RESET client_min_messages
+ ~ (0.000503) SHOW server_version
+ ~ (0.001805)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.004982) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000265) SHOW server_version
+ ~ default: begin
+ ~ (0.000113) BEGIN
+ ~ (0.000596) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000214) ROLLBACK
+ ~ default: begin
+ ~ (0.000090) BEGIN
+ ~ (0.000740) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ default: rollback
+ ~ (0.000433) ROLLBACK
+ ~ default: begin
+ ~ (0.000152) BEGIN
+ ~ (0.000390) SELECT COUNT(*) FROM "links"
+ ~ (0.000463) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000324) SELECT COUNT(*) FROM "links"
+ ~ (0.000733) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000401) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000331) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000132) ROLLBACK
+ ~ (0.000297) SET backslash_quote = off
+ ~ (0.000100) SET standard_conforming_strings = on
+ ~ (0.000077) SET client_min_messages = warning
+ ~ (0.000074) SET client_min_messages = warning
+ ~ (0.000107) SET client_min_messages = warning
+ ~ (0.000611) SELECT current_schema()
+ ~ (0.005351) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000296) RESET client_min_messages
+ ~ (0.000254) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.009679) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003183) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003320) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000304) RESET client_min_messages
+ ~ (0.000272) SHOW server_version
+ ~ (0.001811)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.002862) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000225) SHOW server_version
+ ~ default: begin
+ ~ (0.000102) BEGIN
+ ~ (0.000555) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000465) ROLLBACK
+ ~ default: begin
+ ~ (0.000126) BEGIN
+ ~ (0.000778) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ default: rollback
+ ~ (0.000258) ROLLBACK
+ ~ default: begin
+ ~ (0.000301) BEGIN
+ ~ (0.000422) SELECT COUNT(*) FROM "links"
+ ~ (0.000495) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000325) SELECT COUNT(*) FROM "links"
+ ~ (0.000643) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000341) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000231) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000112) ROLLBACK
+ ~ (0.000283) SET backslash_quote = off
+ ~ (0.000099) SET standard_conforming_strings = on
+ ~ (0.000083) SET client_min_messages = warning
+ ~ (0.000086) SET client_min_messages = warning
+ ~ (0.000079) SET client_min_messages = warning
+ ~ (0.000532) SELECT current_schema()
+ ~ (0.005149) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000228) RESET client_min_messages
+ ~ (0.000316) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.009799) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003455) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003418) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000284) RESET client_min_messages
+ ~ (0.000358) SHOW server_version
+ ~ (0.002385)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.006252) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000261) SHOW server_version
+ ~ default: begin
+ ~ (0.000098) BEGIN
+ ~ (0.000637) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000187) ROLLBACK
+ ~ default: begin
+ ~ (0.000145) BEGIN
+ ~ (0.000853) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ default: rollback
+ ~ (0.000404) ROLLBACK
+ ~ default: begin
+ ~ (0.000300) BEGIN
+ ~ (0.000505) SELECT COUNT(*) FROM "links"
+ ~ (0.000710) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000407) SELECT COUNT(*) FROM "links"
+ ~ (0.000658) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000462) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000397) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000142) ROLLBACK
+ ~ (0.000282) SET backslash_quote = off
+ ~ (0.000095) SET standard_conforming_strings = on
+ ~ (0.000077) SET client_min_messages = warning
+ ~ (0.000074) SET client_min_messages = warning
+ ~ (0.000077) SET client_min_messages = warning
+ ~ (0.000520) SELECT current_schema()
+ ~ (0.005217) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000187) RESET client_min_messages
+ ~ (0.000218) SET backslash_quote = off
+ ~ (0.000091) SET standard_conforming_strings = on
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.009601) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003627) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003395) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000268) RESET client_min_messages
+ ~ (0.000404) SHOW server_version
+ ~ (0.001892)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.005057) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000232) SHOW server_version
+ ~ default: begin
+ ~ (0.000151) BEGIN
+ ~ (0.000534) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000228) ROLLBACK
+ ~ default: begin
+ ~ (0.000159) BEGIN
+ ~ (0.000926) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ default: rollback
+ ~ (0.000438) ROLLBACK
+ ~ default: begin
+ ~ (0.000124) BEGIN
+ ~ (0.000393) SELECT COUNT(*) FROM "links"
+ ~ (0.000432) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000422) SELECT COUNT(*) FROM "links"
+ ~ (0.000582) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000331) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000243) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000129) ROLLBACK
+ ~ (0.000276) SET backslash_quote = off
+ ~ (0.000108) SET standard_conforming_strings = on
+ ~ (0.000113) SET client_min_messages = warning
+ ~ (0.000084) SET client_min_messages = warning
+ ~ (0.000081) SET client_min_messages = warning
+ ~ (0.000564) SELECT current_schema()
+ ~ (0.005840) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000209) RESET client_min_messages
+ ~ (0.000243) SET backslash_quote = off
+ ~ (0.000107) SET standard_conforming_strings = on
+ ~ (0.000081) SET client_min_messages = warning
+ ~ (0.009857) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003931) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003487) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000253) RESET client_min_messages
+ ~ (0.001191) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000302) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000074) SET client_min_messages = warning
+ ~ (0.000073) SET client_min_messages = warning
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.000533) SELECT current_schema()
+ ~ (0.005230) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000228) RESET client_min_messages
+ ~ (0.000293) SET backslash_quote = off
+ ~ (0.000133) SET standard_conforming_strings = on
+ ~ (0.000079) SET client_min_messages = warning
+ ~ (0.011008) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003644) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003196) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000122) RESET client_min_messages
+ ~ (0.000400) SHOW server_version
+ ~ (0.002012)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.005060) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000229) SHOW server_version
+ ~ default: begin
+ ~ (0.000096) BEGIN
+ ~ (0.000495) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000228) ROLLBACK
+ ~ default: begin
+ ~ (0.000117) BEGIN
+ ~ (0.000805) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ default: rollback
+ ~ (0.000351) ROLLBACK
+ ~ default: begin
+ ~ (0.000145) BEGIN
+ ~ (0.000462) SELECT COUNT(*) FROM "links"
+ ~ (0.000374) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000304) SELECT COUNT(*) FROM "links"
+ ~ (0.000655) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000383) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000271) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000140) ROLLBACK
+ ~ (0.000252) SET backslash_quote = off
+ ~ (0.000095) SET standard_conforming_strings = on
+ ~ (0.000084) SET client_min_messages = warning
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.000079) SET client_min_messages = warning
+ ~ (0.000555) SELECT current_schema()
+ ~ (0.005218) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000261) RESET client_min_messages
+ ~ (0.000261) SET backslash_quote = off
+ ~ (0.000095) SET standard_conforming_strings = on
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.009815) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003206) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003162) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000270) RESET client_min_messages
+ ~ (0.000445) SHOW server_version
+ ~ (0.001919)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.005388) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000386) SHOW server_version
+ ~ default: begin
+ ~ (0.000124) BEGIN
+ ~ (0.000722) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000288) ROLLBACK
+ ~ default: begin
+ ~ (0.000161) BEGIN
+ ~ (0.000845) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ default: rollback
+ ~ (0.000199) ROLLBACK
+ ~ default: begin
+ ~ (0.000103) BEGIN
+ ~ (0.000325) SELECT COUNT(*) FROM "links"
+ ~ (0.000421) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000197) SELECT COUNT(*) FROM "links"
+ ~ (0.000569) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000332) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000278) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000118) ROLLBACK
+ ~ (0.000321) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000077) SET client_min_messages = warning
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.000079) SET client_min_messages = warning
+ ~ (0.000512) SELECT current_schema()
+ ~ (0.005391) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000204) RESET client_min_messages
+ ~ (0.000300) SET backslash_quote = off
+ ~ (0.000093) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.009816) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003179) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003368) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000224) RESET client_min_messages
+ ~ (0.000400) SHOW server_version
+ ~ (0.001913)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.004517) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000295) SHOW server_version
+ ~ default: begin
+ ~ (0.000099) BEGIN
+ ~ (0.000626) SELECT COUNT(*) FROM "links"
+ ~ (0.000847) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ default: rollback
+ ~ (0.000317) ROLLBACK
+ ~ default: begin
+ ~ (0.000105) BEGIN
+ ~ (0.000802) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ (0.000479) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ default: rollback
+ ~ (0.000235) ROLLBACK
+ ~ default: begin
+ ~ (0.000106) BEGIN
+ ~ (0.000323) SELECT COUNT(*) FROM "links"
+ ~ (0.000356) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000191) SELECT COUNT(*) FROM "links"
+ ~ (0.000255) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000275) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000210) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000130) ROLLBACK
+ ~ (0.000340) SET backslash_quote = off
+ ~ (0.000105) SET standard_conforming_strings = on
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.000074) SET client_min_messages = warning
+ ~ (0.000077) SET client_min_messages = warning
+ ~ (0.000529) SELECT current_schema()
+ ~ (0.005305) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000242) RESET client_min_messages
+ ~ (0.000358) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.009549) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003523) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003388) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000261) RESET client_min_messages
+ ~ (0.000518) SHOW server_version
+ ~ (0.001985)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.005218) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000246) SHOW server_version
+ ~ default: begin
+ ~ (0.000097) BEGIN
+ ~ (0.000494) SELECT COUNT(*) FROM "links"
+ ~ (0.000739) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ default: rollback
+ ~ (0.000186) ROLLBACK
+ ~ default: begin
+ ~ (0.000184) BEGIN
+ ~ (0.000802) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ (0.000457) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ default: rollback
+ ~ (0.000222) ROLLBACK
+ ~ default: begin
+ ~ (0.000103) BEGIN
+ ~ (0.000325) SELECT COUNT(*) FROM "links"
+ ~ (0.000309) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000198) SELECT COUNT(*) FROM "links"
+ ~ (0.000257) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000259) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000175) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000108) ROLLBACK
+ ~ (0.000295) SET backslash_quote = off
+ ~ (0.000138) SET standard_conforming_strings = on
+ ~ (0.000104) SET client_min_messages = warning
+ ~ (0.000100) SET client_min_messages = warning
+ ~ (0.000105) SET client_min_messages = warning
+ ~ (0.000615) SELECT current_schema()
+ ~ (0.005347) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000202) RESET client_min_messages
+ ~ (0.000265) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.009723) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003502) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003286) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000284) RESET client_min_messages
+ ~ (0.000247) SHOW server_version
+ ~ (0.001833)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.005403) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000266) SHOW server_version
+ ~ default: begin
+ ~ (0.000096) BEGIN
+ ~ (0.000598) SELECT COUNT(*) FROM "links"
+ ~ (0.000984) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ default: rollback
+ ~ (0.000464) ROLLBACK
+ ~ default: begin
+ ~ (0.000170) BEGIN
+ ~ (0.000725) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ (0.000489) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ default: rollback
+ ~ (0.000235) ROLLBACK
+ ~ default: begin
+ ~ (0.000118) BEGIN
+ ~ (0.000419) SELECT COUNT(*) FROM "links"
+ ~ (0.000347) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000272) SELECT COUNT(*) FROM "links"
+ ~ (0.000258) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000257) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000288) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000173) ROLLBACK
+ ~ (0.000281) SET backslash_quote = off
+ ~ (0.000097) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.000079) SET client_min_messages = warning
+ ~ (0.000523) SELECT current_schema()
+ ~ (0.005156) SELECT COUNT(*) FROM "information_schema"."tables" WHERE "table_type" = 'BASE TABLE' AND "table_schema" = 'public' AND "table_name" = 'links'
+ ~ (0.000188) RESET client_min_messages
+ ~ (0.000266) SET backslash_quote = off
+ ~ (0.000095) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.009640) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'id'
+ ~ (0.003368) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'title'
+ ~ (0.003340) SELECT COUNT(*) FROM "information_schema"."columns" WHERE "table_schema" = 'public' AND "table_name" = 'links' AND "column_name" = 'url'
+ ~ (0.000315) RESET client_min_messages
+ ~ (0.000304) SHOW server_version
+ ~ (0.001927)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.004976) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.000312) SHOW server_version
+ ~ default: begin
+ ~ (0.000098) BEGIN
+ ~ (0.000492) SELECT COUNT(*) FROM "links"
+ ~ (0.000784) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000999) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000515) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000300) SELECT COUNT(*) FROM "links"
+ ~ (0.000367) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ default: rollback
+ ~ (0.000136) ROLLBACK
+ ~ default: begin
+ ~ (0.000104) BEGIN
+ ~ (0.000340) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ (0.000412) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ default: rollback
+ ~ (0.000240) ROLLBACK
+ ~ default: begin
+ ~ (0.000117) BEGIN
+ ~ (0.000265) SELECT COUNT(*) FROM "links"
+ ~ (0.000445) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000417) SELECT COUNT(*) FROM "links"
+ ~ (0.000410) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000268) DELETE FROM "links" WHERE "id" = 3
+ ~ (0.000179) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000097) ROLLBACK
