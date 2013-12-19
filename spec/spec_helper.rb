@@ -1,9 +1,11 @@
 ENV["RACK_ENV"] = 'test' # because we need to know what database to work with
 
+require './app/server' 
+require 'database_cleaner'
 require 'capybara/rspec'
 # require 'sinatra'  #if u require here sinatra the view will look in this file
-require 'database_cleaner'
-require './server' 
+
+
 # Remember environment variables from week 1?
 
 # this needs to be after ENV["RACK_ENV"] = 'test' 

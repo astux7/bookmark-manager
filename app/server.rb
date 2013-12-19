@@ -1,32 +1,16 @@
-env = ENV["RACK_ENV"] || "development"
-
-require 'data_mapper'
 require 'sinatra'
+require 'data_mapper'
 require 'rack-flash'
+
+require './lib/link' # this needs to be done after datamapper is initialised
+require './lib/tag'
+require './lib/user'
+require_relative 'data_mapper_setup'
+require_relative 'helpers/application.rb'
 
 use Rack::Flash
 enable :sessions
 set :session_secret, 'super secret'
-
-require_relative './lib/link' # this needs to be done after datamapper is initialised
-require_relative './lib/tag'
-require_relative './lib/user'
-require_relative './helpers/application.rb'
-
-
-# we're telling datamapper to use a postgres database on localhost. The name will
-# be "bookmark_manager_test" or "bookmark_manager_development" depending on the environment
-DataMapper::Logger.new("log.txt", :debug)
-DataMapper.setup(:default, "postgres://localhost/bookmark_manager_#{env}")
-
-
-
-# After declaring your models, you should finalise them
-DataMapper.finalize
-
-# However, how database tables don't exist yet. Let's tell datamapper to create them
-DataMapper.auto_upgrade!
-
 
 get '/' do
   @links = Link.all()
