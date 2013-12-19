@@ -14,7 +14,6 @@ require './server'
 
 Capybara.app = Sinatra::Application
 
-
 RSpec.configure do |config|
 
   config.before(:suite) do

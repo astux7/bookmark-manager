@@ -1,19 +1,32 @@
+env = ENV["RACK_ENV"] || "development"
+
 require 'data_mapper'
 require 'sinatra'
+require 'rack-flash'
 
-env = ENV["RACK_ENV"] || "development"
+use Rack::Flash
+enable :sessions
+set :session_secret, 'super secret'
+
+require_relative './lib/link' # this needs to be done after datamapper is initialised
+require_relative './lib/tag'
+require_relative './lib/user'
+require_relative './helpers/application.rb'
+
+
 # we're telling datamapper to use a postgres database on localhost. The name will
 # be "bookmark_manager_test" or "bookmark_manager_development" depending on the environment
 DataMapper::Logger.new("log.txt", :debug)
 DataMapper.setup(:default, "postgres://localhost/bookmark_manager_#{env}")
 
-require './lib/link' # this needs to be done after datamapper is initialised
+
 
 # After declaring your models, you should finalise them
 DataMapper.finalize
 
 # However, how database tables don't exist yet. Let's tell datamapper to create them
 DataMapper.auto_upgrade!
+
 
 get '/' do
   @links = Link.all()
@@ -23,6 +36,48 @@ end
 post '/links' do
   url = params["url"]
   title = params["title"]
-  Link.create(:url => url, :title => title)
+  tags = params["tags"].split(" ").map do |tag|
+  # this will either find this tag or create
+  # it if it doesn't exist already
+    Tag.first_or_create(:text => tag)
+  end
+  Link.create(:url => url, :title => title, :tags => tags)
   redirect to('/')
+end
+
+get '/tags/:text' do
+  tag = Tag.first(:text => params[:text])
+  @links = tag ? tag.links : []
+  erb :index
+end
+
+get '/users/new' do
+  # note the view is in views/users/new.erb
+  # we need the quotes because otherwise
+  # ruby would divide the symbol :users by the
+  # variable new (which makes no sense)
+  @user = User.new
+  erb :"users/new"
+end
+
+get '/users' do
+  # note the view is in views/users/new.erb
+  # we need the quotes because otherwise
+  # ruby would divide the symbol :users by the
+  # variable new (which makes no sense)
+  @user = User.new
+  erb :"users/new"
+end
+
+post '/users' do
+  @user = User.new(:email => params[:email], 
+              :password => params[:password],
+              :password_confirmation => params[:password_confirmation])  
+ if @user.save
+    session[:user_id] = @user.id
+    redirect to('/')
+  else
+    flash.now[:errors] = @user.errors.full_messages
+    erb :"users/new"
+  end
 end
