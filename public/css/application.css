@@ -90,10 +90,25 @@ header {
 
 .link {
   background-color: #EEE;
+  display: none;
   box-shadow: 0 0 5px rgba(0,0,0,0.4);
   margin: 10px inherit;
   padding: 15px 10px;
+  position: relative;
 }
+.link .star {
+    /* absolute but relative to the first parent that's relative */
+    position: absolute;
+    font-size: 24px;
+    right: 5px;
+    top: 5px;
+    color: yellowgreen;
+    cursor: pointer;
+  }
+
+  .link .star.solid {
+    opacity: 0; /* not hidden (nonexistent), just invisible */
+  }
 
   .link a.title {
     letter-spacing: 1px;    

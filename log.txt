@@ -31,3 +31,7 @@ Mon, 13 Jan 2014 11:54:31 GMT  ~  info  ~  Logfile created
  ~ (0.000125) SET standard_conforming_strings = on
  ~ (0.000097) SET client_min_messages = warning
  ~ (0.001726) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000280) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.001813) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
