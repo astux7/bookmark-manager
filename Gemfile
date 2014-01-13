@@ -12,3 +12,4 @@ group :development, :test do
   gem 'capybara' #testing client side
   gem 'database_cleaner' #to clean the database after the test
 end
+/Users/astux7/asta_stuff/pingpong/pingpong/config.ru
