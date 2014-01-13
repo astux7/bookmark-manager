@@ -1368,3 +1368,992 @@
  ~ (0.000094) SET standard_conforming_strings = on
  ~ (0.000076) SET client_min_messages = warning
  ~ (0.001596) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.009289) SET backslash_quote = off
+ ~ (0.000532) SET standard_conforming_strings = on
+ ~ (0.000082) SET client_min_messages = warning
+ ~ (0.042141) SELECT "id", "email" FROM "users" WHERE "email" = 'b@b.lt' ORDER BY "id" LIMIT 1
+ ~ (0.000637) SELECT "id", "password_digest" FROM "users" WHERE "id" = 2 ORDER BY "id"
+ ~ (0.000262) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000078) SET client_min_messages = warning
+ ~ (0.004801) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000952) SELECT "id", "email" FROM "users" WHERE "id" = 2 LIMIT 1
+ ~ (0.000270) SET backslash_quote = off
+ ~ (0.000152) SET standard_conforming_strings = on
+ ~ (0.000090) SET client_min_messages = warning
+ ~ (0.001489) SELECT "id", "email" FROM "users" WHERE "id" = 2 LIMIT 1
+ ~ (0.000230) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.006647) SELECT "id", "text" FROM "tags" WHERE "text" = 'mk' ORDER BY "id" LIMIT 1
+ ~ (0.000475) SELECT "id", "text" FROM "tags" WHERE "text" = 'studies' ORDER BY "id" LIMIT 1
+ ~ (0.004859) INSERT INTO "tags" ("text") VALUES ('studies') RETURNING "id"
+ ~ (0.001713) INSERT INTO "links" ("title", "url") VALUES ('MK akademy', 'http://makersakademy.com') RETURNING "id"
+ ~ (0.001654) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 12 AND "tag_id" = 11) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000683) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (12, 11)
+ ~ (0.000542) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 12 AND "tag_id" = 17) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000549) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (12, 17)
+ ~ (0.000266) SET backslash_quote = off
+ ~ (0.000098) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.001570) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000911) SELECT "id", "email" FROM "users" WHERE "id" = 2 LIMIT 1
+ ~ (0.000272) SET backslash_quote = off
+ ~ (0.000096) SET standard_conforming_strings = on
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.001553) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000969) SELECT "id", "email" FROM "users" WHERE "id" = 2 LIMIT 1
+ ~ (0.000276) SET backslash_quote = off
+ ~ (0.000096) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.001589) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000978) SELECT "id", "email" FROM "users" WHERE "id" = 2 LIMIT 1
+ ~ (0.000309) SET backslash_quote = off
+ ~ (0.000096) SET standard_conforming_strings = on
+ ~ (0.000077) SET client_min_messages = warning
+ ~ (0.001704) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.001134) SELECT "id", "email" FROM "users" WHERE "id" = 2 LIMIT 1
+ ~ (0.000362) SET backslash_quote = off
+ ~ (0.000129) SET standard_conforming_strings = on
+ ~ (0.000103) SET client_min_messages = warning
+ ~ (0.001785) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000954) SELECT "id", "email" FROM "users" WHERE "id" = 2 LIMIT 1
+ ~ (0.000274) SET backslash_quote = off
+ ~ (0.000119) SET standard_conforming_strings = on
+ ~ (0.000092) SET client_min_messages = warning
+ ~ (0.001712) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000331) SET backslash_quote = off
+ ~ (0.000133) SET standard_conforming_strings = on
+ ~ (0.000091) SET client_min_messages = warning
+ ~ (0.002759) SELECT "id", "email" FROM "users" WHERE "email" = 'b@b.lt' ORDER BY "id" LIMIT 1
+ ~ (0.000462) SELECT "id", "password_digest" FROM "users" WHERE "id" = 2 ORDER BY "id"
+ ~ (0.000337) SET backslash_quote = off
+ ~ (0.000148) SET standard_conforming_strings = on
+ ~ (0.000108) SET client_min_messages = warning
+ ~ (0.002130) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000933) SELECT "id", "email" FROM "users" WHERE "id" = 2 LIMIT 1
+ ~ (0.000262) SET backslash_quote = off
+ ~ (0.000096) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.001555) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000971) SELECT "id", "email" FROM "users" WHERE "id" = 2 LIMIT 1
+ ~ (0.000305) SET backslash_quote = off
+ ~ (0.000135) SET standard_conforming_strings = on
+ ~ (0.000108) SET client_min_messages = warning
+ ~ (0.001828) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.001011) SELECT "id", "email" FROM "users" WHERE "id" = 2 LIMIT 1
+ ~ (0.000269) SET backslash_quote = off
+ ~ (0.000095) SET standard_conforming_strings = on
+ ~ (0.000077) SET client_min_messages = warning
+ ~ (0.001566) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000292) SET backslash_quote = off
+ ~ (0.000098) SET standard_conforming_strings = on
+ ~ (0.000077) SET client_min_messages = warning
+ ~ (0.002415) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000242) SET backslash_quote = off
+ ~ (0.000100) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.001726) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000252) SET backslash_quote = off
+ ~ (0.000113) SET standard_conforming_strings = on
+ ~ (0.000086) SET client_min_messages = warning
+ ~ (0.001703) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000352) SET backslash_quote = off
+ ~ (0.000131) SET standard_conforming_strings = on
+ ~ (0.000100) SET client_min_messages = warning
+ ~ (0.002829) SELECT "id", "email" FROM "users" WHERE "email" = 'b@b.lt' ORDER BY "id" LIMIT 1
+ ~ (0.000542) SELECT "id", "password_digest" FROM "users" WHERE "id" = 2 ORDER BY "id"
+ ~ (0.000347) SET backslash_quote = off
+ ~ (0.000145) SET standard_conforming_strings = on
+ ~ (0.000121) SET client_min_messages = warning
+ ~ (0.001865) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.001047) SELECT "id", "email" FROM "users" WHERE "id" = 2 LIMIT 1
+ ~ (0.000295) SET backslash_quote = off
+ ~ (0.000097) SET standard_conforming_strings = on
+ ~ (0.000103) SET client_min_messages = warning
+ ~ (0.001725) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000246) SET backslash_quote = off
+ ~ (0.000098) SET standard_conforming_strings = on
+ ~ (0.000077) SET client_min_messages = warning
+ ~ (0.002659) SELECT "id", "email" FROM "users" WHERE "email" = 'b@b.lt' ORDER BY "id" LIMIT 1
+ ~ (0.000733) SELECT "id", "password_digest" FROM "users" WHERE "id" = 2 ORDER BY "id"
+ ~ (0.000266) SET backslash_quote = off
+ ~ (0.000095) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.001574) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000978) SELECT "id", "email" FROM "users" WHERE "id" = 2 LIMIT 1
+ ~ (0.000304) SET backslash_quote = off
+ ~ (0.000097) SET standard_conforming_strings = on
+ ~ (0.000077) SET client_min_messages = warning
+ ~ (0.001606) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000295) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.001667) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000362) SET backslash_quote = off
+ ~ (0.000105) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.002584) SELECT "id", "email" FROM "users" WHERE "email" = 'b@b.lt' ORDER BY "id" LIMIT 1
+ ~ (0.000529) SELECT "id", "password_digest" FROM "users" WHERE "id" = 2 ORDER BY "id"
+ ~ (0.000267) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000078) SET client_min_messages = warning
+ ~ (0.001514) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.001000) SELECT "id", "email" FROM "users" WHERE "id" = 2 LIMIT 1
+ ~ (0.000304) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.001594) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000256) SET backslash_quote = off
+ ~ (0.000136) SET standard_conforming_strings = on
+ ~ (0.000086) SET client_min_messages = warning
+ ~ (0.001927) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000232) SET backslash_quote = off
+ ~ (0.000095) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.001553) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000308) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000077) SET client_min_messages = warning
+ ~ (0.002589) SELECT "id", "email" FROM "users" WHERE "email" = 'b@b.lt' ORDER BY "id" LIMIT 1
+ ~ (0.000484) SELECT "id", "password_digest" FROM "users" WHERE "id" = 2 ORDER BY "id"
+ ~ (0.000263) SET backslash_quote = off
+ ~ (0.000096) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.002606) SELECT "id", "email" FROM "users" WHERE "email" = 'b@b.lt' ORDER BY "id" LIMIT 1
+ ~ (0.000584) SELECT "id", "password_digest" FROM "users" WHERE "id" = 2 ORDER BY "id"
+ ~ (0.000297) SET backslash_quote = off
+ ~ (0.000095) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.001577) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000999) SELECT "id", "email" FROM "users" WHERE "id" = 2 LIMIT 1
+ ~ (0.000329) SET backslash_quote = off
+ ~ (0.000169) SET standard_conforming_strings = on
+ ~ (0.000113) SET client_min_messages = warning
+ ~ (0.001717) SELECT "id", "email" FROM "users" WHERE "id" = 2 LIMIT 1
+ ~ (0.000254) SET backslash_quote = off
+ ~ (0.000149) SET standard_conforming_strings = on
+ ~ (0.000107) SET client_min_messages = warning
+ ~ (0.001513) SELECT "id", "email" FROM "users" WHERE "id" = 2 LIMIT 1
+ ~ (0.000296) SET backslash_quote = off
+ ~ (0.000095) SET standard_conforming_strings = on
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.001532) SELECT "id", "email" FROM "users" WHERE "id" = 2 LIMIT 1
+ ~ (0.000360) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.001738) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000936) SELECT "id", "email" FROM "users" WHERE "id" = 2 LIMIT 1
+ ~ (0.000296) SET backslash_quote = off
+ ~ (0.000099) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.001697) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000984) SELECT "id", "email" FROM "users" WHERE "id" = 2 LIMIT 1
+ ~ (0.000267) SET backslash_quote = off
+ ~ (0.000095) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.001480) SELECT "id", "email" FROM "users" WHERE "id" = 2 LIMIT 1
+ ~ (0.000281) SET backslash_quote = off
+ ~ (0.000093) SET standard_conforming_strings = on
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.001547) SELECT "id", "email" FROM "users" WHERE "id" = 2 LIMIT 1
+ ~ (0.000280) SET backslash_quote = off
+ ~ (0.000097) SET standard_conforming_strings = on
+ ~ (0.000101) SET client_min_messages = warning
+ ~ (0.001559) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.001052) SELECT "id", "email" FROM "users" WHERE "id" = 2 LIMIT 1
+ ~ (0.000267) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000077) SET client_min_messages = warning
+ ~ (0.001571) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000274) SET backslash_quote = off
+ ~ (0.000149) SET standard_conforming_strings = on
+ ~ (0.000114) SET client_min_messages = warning
+ ~ (0.001027) SHOW server_version
+ ~ (0.029448)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.011112) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.004257) TRUNCATE TABLE "users" RESTART IDENTITY CASCADE;
+ ~ (0.002440) TRUNCATE TABLE "link_tags" RESTART IDENTITY CASCADE;
+ ~ (0.002456) TRUNCATE TABLE "tags" RESTART IDENTITY CASCADE;
+ ~ (0.000292) SHOW server_version
+ ~ default: begin
+ ~ (0.000552) BEGIN
+ ~ (0.001608) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000211) ROLLBACK
+ ~ default: begin
+ ~ (0.000140) BEGIN
+ ~ default: rollback
+ ~ (0.000140) ROLLBACK
+ ~ default: begin
+ ~ (0.000105) BEGIN
+ ~ (0.013204) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ (0.001136) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ default: rollback
+ ~ (0.000303) ROLLBACK
+ ~ default: begin
+ ~ (0.000161) BEGIN
+ ~ (0.000860) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000254) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000631) INSERT INTO "users" ("email", "password_digest") VALUES ('test@test.com', '$2a$10$/ZstdjO0nZW5MBIi0BXrQ.TMNis9Oc8kfyR0jckazIcwXSwYvM0CS') RETURNING "id"
+ ~ (0.000418) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000506) SELECT "id", "email" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000329) SELECT "id", "password_digest" FROM "users" WHERE "id" = 1 ORDER BY "id"
+ ~ (0.000501) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000349) SELECT "id", "email" FROM "users" WHERE "id" = 1 LIMIT 1
+ ~ default: rollback
+ ~ (0.000205) ROLLBACK
+ ~ default: begin
+ ~ (0.000191) BEGIN
+ ~ (0.000591) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000339) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000351) INSERT INTO "users" ("email", "password_digest") VALUES ('test@test.com', '$2a$10$dZNzcDTukv7rboQqDgWtK.yIDfWY2oMv0cByPsvWaJ6kTYyUti94u') RETURNING "id"
+ ~ (0.000339) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000478) SELECT "id", "email" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000336) SELECT "id", "password_digest" FROM "users" WHERE "id" = 2 ORDER BY "id"
+ ~ default: rollback
+ ~ (0.000304) ROLLBACK
+ ~ default: begin
+ ~ (0.000193) BEGIN
+ ~ (0.000396) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000285) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000280) INSERT INTO "users" ("email", "password_digest") VALUES ('test@test.com', '$2a$10$J8ixE1VK.xFijjL0oZ6S0OEQBIXqnfcHOEWa8m6cihIYtalYLVVG6') RETURNING "id"
+ ~ (0.000461) SELECT "id", "email" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000294) SELECT "id", "password_digest" FROM "users" WHERE "id" = 3 ORDER BY "id"
+ ~ (0.000380) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000357) SELECT "id", "email" FROM "users" WHERE "id" = 3 LIMIT 1
+ ~ (0.000463) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ default: rollback
+ ~ (0.000248) ROLLBACK
+ ~ default: begin
+ ~ (0.000138) BEGIN
+ ~ (0.000328) SELECT COUNT(*) FROM "users"
+ ~ (0.000497) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000314) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000319) INSERT INTO "users" ("email", "password_digest") VALUES ('alice@example.com', '$2a$10$6aLJNkA1xmokfy3okzx4gu.61zwSAsVHOycrlJ7Pnw8yJ.0H6XuGi') RETURNING "id"
+ ~ (0.000316) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000389) SELECT "id", "email" FROM "users" WHERE "id" = 4 LIMIT 1
+ ~ (0.000434) SELECT COUNT(*) FROM "users"
+ ~ (0.000379) SELECT "id", "email" FROM "users" ORDER BY "id" LIMIT 1
+ ~ default: rollback
+ ~ (0.000104) ROLLBACK
+ ~ default: begin
+ ~ (0.000106) BEGIN
+ ~ (0.000284) SELECT COUNT(*) FROM "users"
+ ~ (0.000409) SELECT "id" FROM "users" WHERE "email" = 'a@a.com' ORDER BY "id" LIMIT 1
+ ~ (0.000342) SELECT "id" FROM "users" WHERE "email" = 'a@a.com' ORDER BY "id" LIMIT 1
+ ~ (0.000452) SELECT COUNT(*) FROM "users"
+ ~ default: rollback
+ ~ (0.000215) ROLLBACK
+ ~ default: begin
+ ~ (0.000097) BEGIN
+ ~ (0.000313) SELECT COUNT(*) FROM "users"
+ ~ (0.000400) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000315) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000255) INSERT INTO "users" ("email", "password_digest") VALUES ('alice@example.com', '$2a$10$YLZ4Ub2XvzODinb6JuMV9uyYEbK5txow0tM1ZqUjHfMWo7uCMieVe') RETURNING "id"
+ ~ (0.000342) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000453) SELECT "id", "email" FROM "users" WHERE "id" = 5 LIMIT 1
+ ~ (0.000803) SELECT COUNT(*) FROM "users"
+ ~ (0.000353) SELECT COUNT(*) FROM "users"
+ ~ (0.000456) SELECT "id", "email" FROM "users" WHERE "id" = 5 LIMIT 1
+ ~ (0.000542) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000341) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000257) SELECT "id", "email" FROM "users" WHERE "id" = 5 LIMIT 1
+ ~ (0.000247) SELECT COUNT(*) FROM "users"
+ ~ default: rollback
+ ~ (0.000259) ROLLBACK
+ ~ default: begin
+ ~ (0.000149) BEGIN
+ ~ (0.000304) SELECT COUNT(*) FROM "links"
+ ~ (0.000370) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000207) SELECT COUNT(*) FROM "links"
+ ~ (0.000220) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.001560) SELECT "tags"."id", "tags"."text" FROM "tags" INNER JOIN "link_tags" ON "tags"."id" = "link_tags"."tag_id" INNER JOIN "links" ON "link_tags"."link_id" = "links"."id" WHERE "link_tags"."link_id" = 2 GROUP BY "tags"."id", "tags"."text" ORDER BY "tags"."id"
+ ~ (0.000315) SELECT "link_id", "tag_id" FROM "link_tags" WHERE "link_id" = 2 ORDER BY "link_id", "tag_id"
+ ~ (0.000271) DELETE FROM "links" WHERE "id" = 2
+ ~ (0.000178) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000095) ROLLBACK
+ ~ default: begin
+ ~ (0.000090) BEGIN
+ ~ (0.000336) SELECT "id", "text" FROM "tags" WHERE "text" = 'education' ORDER BY "id" LIMIT 1
+ ~ (0.000581) INSERT INTO "tags" ("text") VALUES ('education') RETURNING "id"
+ ~ (0.000372) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ (0.000403) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 3 AND "tag_id" = 1) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000527) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (3, 1)
+ ~ (0.000452) SELECT "id", "text" FROM "tags" WHERE "text" = 'search' ORDER BY "id" LIMIT 1
+ ~ (0.000307) INSERT INTO "tags" ("text") VALUES ('search') RETURNING "id"
+ ~ (0.000721) INSERT INTO "links" ("title", "url") VALUES ('Google', 'http://www.google.com') RETURNING "id"
+ ~ (0.000487) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 4 AND "tag_id" = 2) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000286) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (4, 2)
+ ~ (0.000337) SELECT "id", "text" FROM "tags" WHERE "text" = 'search' ORDER BY "id" LIMIT 1
+ ~ (0.000357) INSERT INTO "links" ("title", "url") VALUES ('Bing', 'http://www.bing.com') RETURNING "id"
+ ~ (0.000692) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 5 AND "tag_id" = 2) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000373) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (5, 2)
+ ~ (0.000728) SELECT "id", "text" FROM "tags" WHERE "text" = 'education' ORDER BY "id" LIMIT 1
+ ~ (0.000889) INSERT INTO "links" ("title", "url") VALUES ('Code.org', 'http://www.code.org') RETURNING "id"
+ ~ (0.000770) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 6 AND "tag_id" = 1) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000724) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (6, 1)
+ ~ (0.000401) SELECT "id", "text" FROM "tags" WHERE "text" = 'search' ORDER BY "id" LIMIT 1
+ ~ (0.000842) SELECT "links"."id", "links"."title", "links"."url" FROM "links" INNER JOIN "link_tags" ON "links"."id" = "link_tags"."link_id" INNER JOIN "tags" ON "link_tags"."tag_id" = "tags"."id" WHERE "link_tags"."tag_id" = 2 GROUP BY "links"."id", "links"."title", "links"."url" ORDER BY "links"."id"
+ ~ default: rollback
+ ~ (0.000183) ROLLBACK
+ ~ (0.000302) SET backslash_quote = off
+ ~ (0.000138) SET standard_conforming_strings = on
+ ~ (0.000107) SET client_min_messages = warning
+ ~ (0.000241) SHOW server_version
+ ~ (0.006782)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.004645) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.003899) TRUNCATE TABLE "users" RESTART IDENTITY CASCADE;
+ ~ (0.002328) TRUNCATE TABLE "link_tags" RESTART IDENTITY CASCADE;
+ ~ (0.002435) TRUNCATE TABLE "tags" RESTART IDENTITY CASCADE;
+ ~ (0.000366) SHOW server_version
+ ~ default: begin
+ ~ (0.000159) BEGIN
+ ~ (0.000939) SELECT COUNT(*) FROM "links"
+ ~ (0.000920) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000808) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000426) SELECT COUNT(*) FROM "links"
+ ~ (0.000518) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ default: rollback
+ ~ (0.000172) ROLLBACK
+ ~ default: begin
+ ~ (0.000348) BEGIN
+ ~ (0.000883) SELECT "id", "text" FROM "tags" WHERE "text" = 'education' ORDER BY "id" LIMIT 1
+ ~ (0.000609) INSERT INTO "tags" ("text") VALUES ('education') RETURNING "id"
+ ~ (0.000424) SELECT "id", "text" FROM "tags" WHERE "text" = 'ruby' ORDER BY "id" LIMIT 1
+ ~ (0.000333) INSERT INTO "tags" ("text") VALUES ('ruby') RETURNING "id"
+ ~ (0.000416) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000703) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 2 AND "tag_id" = 1) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000479) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (2, 1)
+ ~ (0.000511) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 2 AND "tag_id" = 2) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000317) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (2, 2)
+ ~ (0.000374) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000401) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.001084) SELECT "tags"."id", "tags"."text" FROM "tags" INNER JOIN "link_tags" ON "tags"."id" = "link_tags"."tag_id" INNER JOIN "links" ON "link_tags"."link_id" = "links"."id" WHERE "link_tags"."link_id" = 2 GROUP BY "tags"."id", "tags"."text" ORDER BY "tags"."id"
+ ~ default: rollback
+ ~ (0.000186) ROLLBACK
+ ~ default: begin
+ ~ (0.000180) BEGIN
+ ~ (0.000367) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ (0.000394) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ default: rollback
+ ~ (0.000309) ROLLBACK
+ ~ default: begin
+ ~ (0.000102) BEGIN
+ ~ (0.000674) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000672) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.001613) INSERT INTO "users" ("email", "password_digest") VALUES ('test@test.com', '$2a$10$UTulz4mR28GRr96bSo7LIufeHTmJpAI4tmJUYXk9RhvZjO/JxDnf6') RETURNING "id"
+ ~ (0.000447) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000674) SELECT "id", "email" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000372) SELECT "id", "password_digest" FROM "users" WHERE "id" = 1 ORDER BY "id"
+ ~ (0.000438) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000373) SELECT "id", "email" FROM "users" WHERE "id" = 1 LIMIT 1
+ ~ default: rollback
+ ~ (0.000327) ROLLBACK
+ ~ default: begin
+ ~ (0.000216) BEGIN
+ ~ (0.000512) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000353) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000346) INSERT INTO "users" ("email", "password_digest") VALUES ('test@test.com', '$2a$10$2syng7XM9yLEJNTRb1W6KeiEbdSTOqpljlwN9mccJMbxcePCkpXMK') RETURNING "id"
+ ~ (0.000349) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000458) SELECT "id", "email" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000337) SELECT "id", "password_digest" FROM "users" WHERE "id" = 2 ORDER BY "id"
+ ~ default: rollback
+ ~ (0.000433) ROLLBACK
+ ~ default: begin
+ ~ (0.000222) BEGIN
+ ~ (0.000489) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000332) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000269) INSERT INTO "users" ("email", "password_digest") VALUES ('test@test.com', '$2a$10$qj2ukDcZb6jUP57wKA7gcecwbWDoGA6KDgetupfJ5A17Vjhgh2T6S') RETURNING "id"
+ ~ (0.000480) SELECT "id", "email" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000309) SELECT "id", "password_digest" FROM "users" WHERE "id" = 3 ORDER BY "id"
+ ~ (0.000421) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000434) SELECT "id", "email" FROM "users" WHERE "id" = 3 LIMIT 1
+ ~ (0.000320) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ default: rollback
+ ~ (0.000351) ROLLBACK
+ ~ default: begin
+ ~ (0.000170) BEGIN
+ ~ (0.000329) SELECT COUNT(*) FROM "users"
+ ~ (0.000464) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000236) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000260) INSERT INTO "users" ("email", "password_digest") VALUES ('alice@example.com', '$2a$10$KRXn.JZjncE7sksM/exA/e44G2GbyadLFr/dImobuhRE8CKbmhjzO') RETURNING "id"
+ ~ (0.000416) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000339) SELECT "id", "email" FROM "users" WHERE "id" = 4 LIMIT 1
+ ~ (0.000376) SELECT COUNT(*) FROM "users"
+ ~ (0.000440) SELECT "id", "email" FROM "users" ORDER BY "id" LIMIT 1
+ ~ default: rollback
+ ~ (0.000136) ROLLBACK
+ ~ default: begin
+ ~ (0.000149) BEGIN
+ ~ (0.000253) SELECT COUNT(*) FROM "users"
+ ~ (0.000441) SELECT "id" FROM "users" WHERE "email" = 'a@a.com' ORDER BY "id" LIMIT 1
+ ~ (0.000408) SELECT "id" FROM "users" WHERE "email" = 'a@a.com' ORDER BY "id" LIMIT 1
+ ~ (0.000342) SELECT COUNT(*) FROM "users"
+ ~ default: rollback
+ ~ (0.000270) ROLLBACK
+ ~ default: begin
+ ~ (0.000135) BEGIN
+ ~ (0.000268) SELECT COUNT(*) FROM "users"
+ ~ (0.000555) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000366) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000269) INSERT INTO "users" ("email", "password_digest") VALUES ('alice@example.com', '$2a$10$wjbUV07cnnLy7szh.FzXB.6lhQxWs72b7WTrJO2Wb2y2kLvbFX9QW') RETURNING "id"
+ ~ (0.000441) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000306) SELECT "id", "email" FROM "users" WHERE "id" = 5 LIMIT 1
+ ~ (0.000376) SELECT COUNT(*) FROM "users"
+ ~ (0.000282) SELECT COUNT(*) FROM "users"
+ ~ (0.000411) SELECT "id", "email" FROM "users" WHERE "id" = 5 LIMIT 1
+ ~ (0.000423) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000271) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000361) SELECT "id", "email" FROM "users" WHERE "id" = 5 LIMIT 1
+ ~ (0.000293) SELECT COUNT(*) FROM "users"
+ ~ default: rollback
+ ~ (0.000286) ROLLBACK
+ ~ default: begin
+ ~ (0.000118) BEGIN
+ ~ (0.000264) SELECT COUNT(*) FROM "links"
+ ~ (0.000419) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000276) SELECT COUNT(*) FROM "links"
+ ~ (0.000356) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000727) SELECT "tags"."id", "tags"."text" FROM "tags" INNER JOIN "link_tags" ON "tags"."id" = "link_tags"."tag_id" INNER JOIN "links" ON "link_tags"."link_id" = "links"."id" WHERE "link_tags"."link_id" = 4 GROUP BY "tags"."id", "tags"."text" ORDER BY "tags"."id"
+ ~ (0.000368) SELECT "link_id", "tag_id" FROM "link_tags" WHERE "link_id" = 4 ORDER BY "link_id", "tag_id"
+ ~ (0.000267) DELETE FROM "links" WHERE "id" = 4
+ ~ (0.000202) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000113) ROLLBACK
+ ~ default: begin
+ ~ (0.000090) BEGIN
+ ~ (0.000305) SELECT "id", "text" FROM "tags" WHERE "text" = 'education' ORDER BY "id" LIMIT 1
+ ~ (0.000270) INSERT INTO "tags" ("text") VALUES ('education') RETURNING "id"
+ ~ (0.000388) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ (0.000568) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 5 AND "tag_id" = 3) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000320) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (5, 3)
+ ~ (0.000388) SELECT "id", "text" FROM "tags" WHERE "text" = 'search' ORDER BY "id" LIMIT 1
+ ~ (0.000305) INSERT INTO "tags" ("text") VALUES ('search') RETURNING "id"
+ ~ (0.000418) INSERT INTO "links" ("title", "url") VALUES ('Google', 'http://www.google.com') RETURNING "id"
+ ~ (0.000627) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 6 AND "tag_id" = 4) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000248) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (6, 4)
+ ~ (0.000320) SELECT "id", "text" FROM "tags" WHERE "text" = 'search' ORDER BY "id" LIMIT 1
+ ~ (0.000388) INSERT INTO "links" ("title", "url") VALUES ('Bing', 'http://www.bing.com') RETURNING "id"
+ ~ (0.000509) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 7 AND "tag_id" = 4) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000231) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (7, 4)
+ ~ (0.000314) SELECT "id", "text" FROM "tags" WHERE "text" = 'education' ORDER BY "id" LIMIT 1
+ ~ (0.000422) INSERT INTO "links" ("title", "url") VALUES ('Code.org', 'http://www.code.org') RETURNING "id"
+ ~ (0.000443) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 8 AND "tag_id" = 3) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000315) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (8, 3)
+ ~ (0.000457) SELECT "id", "text" FROM "tags" WHERE "text" = 'search' ORDER BY "id" LIMIT 1
+ ~ (0.000846) SELECT "links"."id", "links"."title", "links"."url" FROM "links" INNER JOIN "link_tags" ON "links"."id" = "link_tags"."link_id" INNER JOIN "tags" ON "link_tags"."tag_id" = "tags"."id" WHERE "link_tags"."tag_id" = 4 GROUP BY "links"."id", "links"."title", "links"."url" ORDER BY "links"."id"
+ ~ default: rollback
+ ~ (0.000213) ROLLBACK
+ ~ (0.000261) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.000211) SHOW server_version
+ ~ (0.006000)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.004826) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.003114) TRUNCATE TABLE "users" RESTART IDENTITY CASCADE;
+ ~ (0.003394) TRUNCATE TABLE "link_tags" RESTART IDENTITY CASCADE;
+ ~ (0.002596) TRUNCATE TABLE "tags" RESTART IDENTITY CASCADE;
+ ~ (0.000354) SHOW server_version
+ ~ default: begin
+ ~ (0.000182) BEGIN
+ ~ (0.000832) SELECT COUNT(*) FROM "links"
+ ~ (0.000840) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000874) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000356) SELECT COUNT(*) FROM "links"
+ ~ (0.000268) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ default: rollback
+ ~ (0.000138) ROLLBACK
+ ~ default: begin
+ ~ (0.000116) BEGIN
+ ~ (0.000791) SELECT "id", "text" FROM "tags" WHERE "text" = 'education' ORDER BY "id" LIMIT 1
+ ~ (0.000603) INSERT INTO "tags" ("text") VALUES ('education') RETURNING "id"
+ ~ (0.000437) SELECT "id", "text" FROM "tags" WHERE "text" = 'ruby' ORDER BY "id" LIMIT 1
+ ~ (0.000268) INSERT INTO "tags" ("text") VALUES ('ruby') RETURNING "id"
+ ~ (0.000437) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000764) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 2 AND "tag_id" = 1) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000505) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (2, 1)
+ ~ (0.000487) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 2 AND "tag_id" = 2) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000314) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (2, 2)
+ ~ (0.000503) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000373) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.001166) SELECT "tags"."id", "tags"."text" FROM "tags" INNER JOIN "link_tags" ON "tags"."id" = "link_tags"."tag_id" INNER JOIN "links" ON "link_tags"."link_id" = "links"."id" WHERE "link_tags"."link_id" = 2 GROUP BY "tags"."id", "tags"."text" ORDER BY "tags"."id"
+ ~ default: rollback
+ ~ (0.000240) ROLLBACK
+ ~ default: begin
+ ~ (0.000155) BEGIN
+ ~ (0.000497) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ (0.000740) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ default: rollback
+ ~ (0.000295) ROLLBACK
+ ~ default: begin
+ ~ (0.000111) BEGIN
+ ~ (0.000726) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000321) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000907) INSERT INTO "users" ("email", "password_digest") VALUES ('test@test.com', '$2a$10$rs8m5DLcoBEEL7la2Ukq1O3WkBO59iGkkFQiiMvGdnBkf3NwRNSMa') RETURNING "id"
+ ~ (0.000307) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000675) SELECT "id", "email" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000470) SELECT "id", "password_digest" FROM "users" WHERE "id" = 1 ORDER BY "id"
+ ~ (0.000483) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000371) SELECT "id", "email" FROM "users" WHERE "id" = 1 LIMIT 1
+ ~ default: rollback
+ ~ (0.000297) ROLLBACK
+ ~ default: begin
+ ~ (0.000217) BEGIN
+ ~ (0.000577) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000381) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000288) INSERT INTO "users" ("email", "password_digest") VALUES ('test@test.com', '$2a$10$w.VSQ0xbc0/Ov7f5gICpSu6dbnCUrRbZOhAxX1Ntp.H54frM7nsAG') RETURNING "id"
+ ~ (0.000452) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000493) SELECT "id", "email" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000441) SELECT "id", "password_digest" FROM "users" WHERE "id" = 2 ORDER BY "id"
+ ~ default: rollback
+ ~ (0.000264) ROLLBACK
+ ~ default: begin
+ ~ (0.000114) BEGIN
+ ~ (0.000534) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000318) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000257) INSERT INTO "users" ("email", "password_digest") VALUES ('test@test.com', '$2a$10$VjKQWx4aXgphxTP.f43HoeQXZQF9n/UroTsD9uDRTR7yH.Bm3CkWe') RETURNING "id"
+ ~ (0.000437) SELECT "id", "email" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000290) SELECT "id", "password_digest" FROM "users" WHERE "id" = 3 ORDER BY "id"
+ ~ (0.000369) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000347) SELECT "id", "email" FROM "users" WHERE "id" = 3 LIMIT 1
+ ~ (0.000388) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ default: rollback
+ ~ (0.000315) ROLLBACK
+ ~ default: begin
+ ~ (0.000180) BEGIN
+ ~ (0.000320) SELECT COUNT(*) FROM "users"
+ ~ (0.000451) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000315) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000300) INSERT INTO "users" ("email", "password_digest") VALUES ('alice@example.com', '$2a$10$2n1zeDe8rRw/yFJJJpzPVObvXMA0WRxvYipz5UT36QHG0nVs3uQdK') RETURNING "id"
+ ~ (0.000305) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000339) SELECT "id", "email" FROM "users" WHERE "id" = 4 LIMIT 1
+ ~ (0.000371) SELECT COUNT(*) FROM "users"
+ ~ (0.000730) SELECT "id", "email" FROM "users" ORDER BY "id" LIMIT 1
+ ~ default: rollback
+ ~ (0.000274) ROLLBACK
+ ~ default: begin
+ ~ (0.000193) BEGIN
+ ~ (0.000429) SELECT COUNT(*) FROM "users"
+ ~ (0.000571) SELECT "id" FROM "users" WHERE "email" = 'a@a.com' ORDER BY "id" LIMIT 1
+ ~ (0.000399) SELECT "id" FROM "users" WHERE "email" = 'a@a.com' ORDER BY "id" LIMIT 1
+ ~ (0.000491) SELECT COUNT(*) FROM "users"
+ ~ default: rollback
+ ~ (0.000303) ROLLBACK
+ ~ default: begin
+ ~ (0.000256) BEGIN
+ ~ (0.000308) SELECT COUNT(*) FROM "users"
+ ~ (0.000402) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000265) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000336) INSERT INTO "users" ("email", "password_digest") VALUES ('alice@example.com', '$2a$10$scO7sZKihij5.hqzYXSwx.ACnkWH9XDVWwTQqgtub12wlpwyKHQQa') RETURNING "id"
+ ~ (0.000362) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000379) SELECT "id", "email" FROM "users" WHERE "id" = 5 LIMIT 1
+ ~ (0.000319) SELECT COUNT(*) FROM "users"
+ ~ (0.000253) SELECT COUNT(*) FROM "users"
+ ~ (0.000676) SELECT "id", "email" FROM "users" WHERE "id" = 5 LIMIT 1
+ ~ (0.000447) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000275) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000389) SELECT "id", "email" FROM "users" WHERE "id" = 5 LIMIT 1
+ ~ (0.000381) SELECT COUNT(*) FROM "users"
+ ~ default: rollback
+ ~ (0.000164) ROLLBACK
+ ~ default: begin
+ ~ (0.000109) BEGIN
+ ~ (0.000346) SELECT COUNT(*) FROM "links"
+ ~ (0.000410) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000219) SELECT COUNT(*) FROM "links"
+ ~ (0.000218) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000899) SELECT "tags"."id", "tags"."text" FROM "tags" INNER JOIN "link_tags" ON "tags"."id" = "link_tags"."tag_id" INNER JOIN "links" ON "link_tags"."link_id" = "links"."id" WHERE "link_tags"."link_id" = 4 GROUP BY "tags"."id", "tags"."text" ORDER BY "tags"."id"
+ ~ (0.000387) SELECT "link_id", "tag_id" FROM "link_tags" WHERE "link_id" = 4 ORDER BY "link_id", "tag_id"
+ ~ (0.000388) DELETE FROM "links" WHERE "id" = 4
+ ~ (0.000193) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000096) ROLLBACK
+ ~ default: begin
+ ~ (0.000163) BEGIN
+ ~ (0.000396) SELECT "id", "text" FROM "tags" WHERE "text" = 'education' ORDER BY "id" LIMIT 1
+ ~ (0.000306) INSERT INTO "tags" ("text") VALUES ('education') RETURNING "id"
+ ~ (0.000321) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ (0.000368) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 5 AND "tag_id" = 3) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000344) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (5, 3)
+ ~ (0.000351) SELECT "id", "text" FROM "tags" WHERE "text" = 'search' ORDER BY "id" LIMIT 1
+ ~ (0.000273) INSERT INTO "tags" ("text") VALUES ('search') RETURNING "id"
+ ~ (0.000416) INSERT INTO "links" ("title", "url") VALUES ('Google', 'http://www.google.com') RETURNING "id"
+ ~ (0.000664) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 6 AND "tag_id" = 4) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000921) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (6, 4)
+ ~ (0.000509) SELECT "id", "text" FROM "tags" WHERE "text" = 'search' ORDER BY "id" LIMIT 1
+ ~ (0.000484) INSERT INTO "links" ("title", "url") VALUES ('Bing', 'http://www.bing.com') RETURNING "id"
+ ~ (0.000439) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 7 AND "tag_id" = 4) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000364) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (7, 4)
+ ~ (0.000404) SELECT "id", "text" FROM "tags" WHERE "text" = 'education' ORDER BY "id" LIMIT 1
+ ~ (0.000469) INSERT INTO "links" ("title", "url") VALUES ('Code.org', 'http://www.code.org') RETURNING "id"
+ ~ (0.000509) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 8 AND "tag_id" = 3) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000288) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (8, 3)
+ ~ (0.000477) SELECT "id", "text" FROM "tags" WHERE "text" = 'search' ORDER BY "id" LIMIT 1
+ ~ (0.000906) SELECT "links"."id", "links"."title", "links"."url" FROM "links" INNER JOIN "link_tags" ON "links"."id" = "link_tags"."link_id" INNER JOIN "tags" ON "link_tags"."tag_id" = "tags"."id" WHERE "link_tags"."tag_id" = 4 GROUP BY "links"."id", "links"."title", "links"."url" ORDER BY "links"."id"
+ ~ default: rollback
+ ~ (0.000222) ROLLBACK
+ ~ (0.000304) SET backslash_quote = off
+ ~ (0.000096) SET standard_conforming_strings = on
+ ~ (0.000077) SET client_min_messages = warning
+ ~ (0.001941) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000267) SET backslash_quote = off
+ ~ (0.000095) SET standard_conforming_strings = on
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.002716) SELECT "id", "email" FROM "users" WHERE "email" = 'b@b.ltr' ORDER BY "id" LIMIT 1
+ ~ (0.000321) SET backslash_quote = off
+ ~ (0.000104) SET standard_conforming_strings = on
+ ~ (0.000079) SET client_min_messages = warning
+ ~ (0.002823) SELECT "id", "email" FROM "users" WHERE "email" = 'b@b.lt' ORDER BY "id" LIMIT 1
+ ~ (0.000647) SELECT "id", "password_digest" FROM "users" WHERE "id" = 2 ORDER BY "id"
+ ~ (0.000267) SET backslash_quote = off
+ ~ (0.000095) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.001567) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000971) SELECT "id", "email" FROM "users" WHERE "id" = 2 LIMIT 1
+ ~ (0.000344) SET backslash_quote = off
+ ~ (0.000106) SET standard_conforming_strings = on
+ ~ (0.000100) SET client_min_messages = warning
+ ~ (0.001578) SELECT "id", "email" FROM "users" WHERE "id" = 2 LIMIT 1
+ ~ (0.000273) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000074) SET client_min_messages = warning
+ ~ (0.001630) SELECT "id", "email" FROM "users" WHERE "id" = 2 LIMIT 1
+ ~ (0.000297) SET backslash_quote = off
+ ~ (0.000135) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.003299) INSERT INTO "links" ("title", "url") VALUES ('', '') RETURNING "id"
+ ~ (0.000303) SET backslash_quote = off
+ ~ (0.000141) SET standard_conforming_strings = on
+ ~ (0.000083) SET client_min_messages = warning
+ ~ (0.001928) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000986) SELECT "id", "email" FROM "users" WHERE "id" = 2 LIMIT 1
+ ~ (0.000280) SET backslash_quote = off
+ ~ (0.000132) SET standard_conforming_strings = on
+ ~ (0.000106) SET client_min_messages = warning
+ ~ (0.002089) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000272) SET backslash_quote = off
+ ~ (0.000096) SET standard_conforming_strings = on
+ ~ (0.000077) SET client_min_messages = warning
+ ~ (0.000180) SHOW server_version
+ ~ (0.006346)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.003161) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.003349) TRUNCATE TABLE "users" RESTART IDENTITY CASCADE;
+ ~ (0.002014) TRUNCATE TABLE "link_tags" RESTART IDENTITY CASCADE;
+ ~ (0.002230) TRUNCATE TABLE "tags" RESTART IDENTITY CASCADE;
+ ~ (0.000348) SHOW server_version
+ ~ default: begin
+ ~ (0.000174) BEGIN
+ ~ (0.000927) SELECT COUNT(*) FROM "links"
+ ~ (0.001042) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000892) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000382) SELECT COUNT(*) FROM "links"
+ ~ (0.000275) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ default: rollback
+ ~ (0.000153) ROLLBACK
+ ~ default: begin
+ ~ (0.000200) BEGIN
+ ~ (0.000787) SELECT "id", "text" FROM "tags" WHERE "text" = 'education' ORDER BY "id" LIMIT 1
+ ~ (0.000608) INSERT INTO "tags" ("text") VALUES ('education') RETURNING "id"
+ ~ (0.000487) SELECT "id", "text" FROM "tags" WHERE "text" = 'ruby' ORDER BY "id" LIMIT 1
+ ~ (0.000333) INSERT INTO "tags" ("text") VALUES ('ruby') RETURNING "id"
+ ~ (0.000337) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000769) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 2 AND "tag_id" = 1) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000531) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (2, 1)
+ ~ (0.000526) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 2 AND "tag_id" = 2) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000334) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (2, 2)
+ ~ (0.000512) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000463) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.001186) SELECT "tags"."id", "tags"."text" FROM "tags" INNER JOIN "link_tags" ON "tags"."id" = "link_tags"."tag_id" INNER JOIN "links" ON "link_tags"."link_id" = "links"."id" WHERE "link_tags"."link_id" = 2 GROUP BY "tags"."id", "tags"."text" ORDER BY "tags"."id"
+ ~ default: rollback
+ ~ (0.000168) ROLLBACK
+ ~ default: begin
+ ~ (0.000109) BEGIN
+ ~ (0.000434) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ (0.000543) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ default: rollback
+ ~ (0.000308) ROLLBACK
+ ~ default: begin
+ ~ (0.000162) BEGIN
+ ~ (0.000851) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000380) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000661) INSERT INTO "users" ("email", "password_digest") VALUES ('test@test.com', '$2a$10$ghwAwdCI.nyO0IUUBiH8LO0VnA8Ms2X.20rYA1AyIW5rl8ph0M4MS') RETURNING "id"
+ ~ (0.000396) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000597) SELECT "id", "email" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000468) SELECT "id", "password_digest" FROM "users" WHERE "id" = 1 ORDER BY "id"
+ ~ (0.000586) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000450) SELECT "id", "email" FROM "users" WHERE "id" = 1 LIMIT 1
+ ~ default: rollback
+ ~ (0.000298) ROLLBACK
+ ~ default: begin
+ ~ (0.000197) BEGIN
+ ~ (0.000668) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000366) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000426) INSERT INTO "users" ("email", "password_digest") VALUES ('test@test.com', '$2a$10$UiOtWHxoEzF.XUrWOwPpC.jJaTF5GIOzDdoWIJswsx2BlGuRzXYH2') RETURNING "id"
+ ~ (0.000366) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000718) SELECT "id", "email" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000408) SELECT "id", "password_digest" FROM "users" WHERE "id" = 2 ORDER BY "id"
+ ~ default: rollback
+ ~ (0.000273) ROLLBACK
+ ~ default: begin
+ ~ (0.000172) BEGIN
+ ~ (0.000505) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000345) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000298) INSERT INTO "users" ("email", "password_digest") VALUES ('test@test.com', '$2a$10$aKqGJgLdSMSVsznXxsbUguHELfRn3vo/Rk3nSZTpihPW3lOge.8Bi') RETURNING "id"
+ ~ (0.000551) SELECT "id", "email" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000336) SELECT "id", "password_digest" FROM "users" WHERE "id" = 3 ORDER BY "id"
+ ~ (0.000522) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000341) SELECT "id", "email" FROM "users" WHERE "id" = 3 LIMIT 1
+ ~ (0.000384) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ default: rollback
+ ~ (0.000309) ROLLBACK
+ ~ default: begin
+ ~ (0.000097) BEGIN
+ ~ (0.000410) SELECT COUNT(*) FROM "users"
+ ~ (0.000443) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000327) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000481) INSERT INTO "users" ("email", "password_digest") VALUES ('alice@example.com', '$2a$10$nhlp0.GWMbId.A7Mo7ZesuBOvrmz1cx3eVrD372B.dMwEcduNlDaW') RETURNING "id"
+ ~ (0.000403) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000337) SELECT "id", "email" FROM "users" WHERE "id" = 4 LIMIT 1
+ ~ (0.000350) SELECT COUNT(*) FROM "users"
+ ~ (0.000493) SELECT "id", "email" FROM "users" ORDER BY "id" LIMIT 1
+ ~ default: rollback
+ ~ (0.000229) ROLLBACK
+ ~ default: begin
+ ~ (0.000136) BEGIN
+ ~ (0.000232) SELECT COUNT(*) FROM "users"
+ ~ (0.000530) SELECT "id" FROM "users" WHERE "email" = 'a@a.com' ORDER BY "id" LIMIT 1
+ ~ (0.000361) SELECT "id" FROM "users" WHERE "email" = 'a@a.com' ORDER BY "id" LIMIT 1
+ ~ (0.000296) SELECT COUNT(*) FROM "users"
+ ~ default: rollback
+ ~ (0.000255) ROLLBACK
+ ~ default: begin
+ ~ (0.000253) BEGIN
+ ~ (0.000277) SELECT COUNT(*) FROM "users"
+ ~ (0.000514) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000403) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000304) INSERT INTO "users" ("email", "password_digest") VALUES ('alice@example.com', '$2a$10$q4MbWjKSrr.7lbpRqoYJ/OifC9ta51sL2N2k2A/hF8VXk.nVP60.W') RETURNING "id"
+ ~ (0.000344) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000399) SELECT "id", "email" FROM "users" WHERE "id" = 5 LIMIT 1
+ ~ (0.000279) SELECT COUNT(*) FROM "users"
+ ~ (0.000172) SELECT COUNT(*) FROM "users"
+ ~ (0.000355) SELECT "id", "email" FROM "users" WHERE "id" = 5 LIMIT 1
+ ~ (0.000571) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000395) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000366) SELECT "id", "email" FROM "users" WHERE "id" = 5 LIMIT 1
+ ~ (0.000359) SELECT COUNT(*) FROM "users"
+ ~ default: rollback
+ ~ (0.000462) ROLLBACK
+ ~ default: begin
+ ~ (0.000163) BEGIN
+ ~ (0.000247) SELECT COUNT(*) FROM "links"
+ ~ (0.000299) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000212) SELECT COUNT(*) FROM "links"
+ ~ (0.000217) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000774) SELECT "tags"."id", "tags"."text" FROM "tags" INNER JOIN "link_tags" ON "tags"."id" = "link_tags"."tag_id" INNER JOIN "links" ON "link_tags"."link_id" = "links"."id" WHERE "link_tags"."link_id" = 4 GROUP BY "tags"."id", "tags"."text" ORDER BY "tags"."id"
+ ~ (0.000347) SELECT "link_id", "tag_id" FROM "link_tags" WHERE "link_id" = 4 ORDER BY "link_id", "tag_id"
+ ~ (0.000229) DELETE FROM "links" WHERE "id" = 4
+ ~ (0.000179) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000112) ROLLBACK
+ ~ default: begin
+ ~ (0.000103) BEGIN
+ ~ (0.000353) SELECT "id", "text" FROM "tags" WHERE "text" = 'education' ORDER BY "id" LIMIT 1
+ ~ (0.000324) INSERT INTO "tags" ("text") VALUES ('education') RETURNING "id"
+ ~ (0.000371) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ (0.000417) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 5 AND "tag_id" = 3) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000348) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (5, 3)
+ ~ (0.000390) SELECT "id", "text" FROM "tags" WHERE "text" = 'search' ORDER BY "id" LIMIT 1
+ ~ (0.000270) INSERT INTO "tags" ("text") VALUES ('search') RETURNING "id"
+ ~ (0.000432) INSERT INTO "links" ("title", "url") VALUES ('Google', 'http://www.google.com') RETURNING "id"
+ ~ (0.000409) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 6 AND "tag_id" = 4) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000360) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (6, 4)
+ ~ (0.000375) SELECT "id", "text" FROM "tags" WHERE "text" = 'search' ORDER BY "id" LIMIT 1
+ ~ (0.000353) INSERT INTO "links" ("title", "url") VALUES ('Bing', 'http://www.bing.com') RETURNING "id"
+ ~ (0.000432) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 7 AND "tag_id" = 4) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000287) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (7, 4)
+ ~ (0.000412) SELECT "id", "text" FROM "tags" WHERE "text" = 'education' ORDER BY "id" LIMIT 1
+ ~ (0.000412) INSERT INTO "links" ("title", "url") VALUES ('Code.org', 'http://www.code.org') RETURNING "id"
+ ~ (0.000455) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 8 AND "tag_id" = 3) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000438) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (8, 3)
+ ~ (0.000414) SELECT "id", "text" FROM "tags" WHERE "text" = 'search' ORDER BY "id" LIMIT 1
+ ~ (0.000904) SELECT "links"."id", "links"."title", "links"."url" FROM "links" INNER JOIN "link_tags" ON "links"."id" = "link_tags"."link_id" INNER JOIN "tags" ON "link_tags"."tag_id" = "tags"."id" WHERE "link_tags"."tag_id" = 4 GROUP BY "links"."id", "links"."title", "links"."url" ORDER BY "links"."id"
+ ~ default: rollback
+ ~ (0.000395) ROLLBACK
+ ~ (0.000337) SET backslash_quote = off
+ ~ (0.000109) SET standard_conforming_strings = on
+ ~ (0.000077) SET client_min_messages = warning
+ ~ (0.000228) SHOW server_version
+ ~ (0.007956)           SELECT table_name FROM "information_schema"."tables"
+          WHERE table_schema = current_schema() and table_type = 'BASE TABLE'
+ ~ (0.002714) TRUNCATE TABLE "links" RESTART IDENTITY CASCADE;
+ ~ (0.003254) TRUNCATE TABLE "users" RESTART IDENTITY CASCADE;
+ ~ (0.001803) TRUNCATE TABLE "link_tags" RESTART IDENTITY CASCADE;
+ ~ (0.002551) TRUNCATE TABLE "tags" RESTART IDENTITY CASCADE;
+ ~ (0.000654) SHOW server_version
+ ~ default: begin
+ ~ (0.000195) BEGIN
+ ~ (0.000907) SELECT COUNT(*) FROM "links"
+ ~ (0.000885) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000872) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000374) SELECT COUNT(*) FROM "links"
+ ~ (0.000367) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ default: rollback
+ ~ (0.000168) ROLLBACK
+ ~ default: begin
+ ~ (0.000200) BEGIN
+ ~ (0.000721) SELECT "id", "text" FROM "tags" WHERE "text" = 'education' ORDER BY "id" LIMIT 1
+ ~ (0.000654) INSERT INTO "tags" ("text") VALUES ('education') RETURNING "id"
+ ~ (0.000418) SELECT "id", "text" FROM "tags" WHERE "text" = 'ruby' ORDER BY "id" LIMIT 1
+ ~ (0.000321) INSERT INTO "tags" ("text") VALUES ('ruby') RETURNING "id"
+ ~ (0.000458) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000735) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 2 AND "tag_id" = 1) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000528) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (2, 1)
+ ~ (0.000512) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 2 AND "tag_id" = 2) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000309) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (2, 2)
+ ~ (0.000366) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000379) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.001104) SELECT "tags"."id", "tags"."text" FROM "tags" INNER JOIN "link_tags" ON "tags"."id" = "link_tags"."tag_id" INNER JOIN "links" ON "link_tags"."link_id" = "links"."id" WHERE "link_tags"."link_id" = 2 GROUP BY "tags"."id", "tags"."text" ORDER BY "tags"."id"
+ ~ default: rollback
+ ~ (0.000176) ROLLBACK
+ ~ default: begin
+ ~ (0.000103) BEGIN
+ ~ (0.000374) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ (0.000582) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ default: rollback
+ ~ (0.000444) ROLLBACK
+ ~ default: begin
+ ~ (0.000155) BEGIN
+ ~ (0.000896) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000458) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000538) INSERT INTO "users" ("email", "password_digest") VALUES ('test@test.com', '$2a$10$SB0Z.Bp4AzwMfhyzSccWa.yG1DM8BRfvmyVMbVm3FFyGj1l12KnNq') RETURNING "id"
+ ~ (0.000477) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000607) SELECT "id", "email" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000450) SELECT "id", "password_digest" FROM "users" WHERE "id" = 1 ORDER BY "id"
+ ~ (0.000527) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000306) SELECT "id", "email" FROM "users" WHERE "id" = 1 LIMIT 1
+ ~ default: rollback
+ ~ (0.000292) ROLLBACK
+ ~ default: begin
+ ~ (0.000244) BEGIN
+ ~ (0.000619) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000478) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000245) INSERT INTO "users" ("email", "password_digest") VALUES ('test@test.com', '$2a$10$KHr/Uy3CxHe8yGmmxNJj.u5zsXUsLFoqxdTD8jPp/iZfxyoR.J3gK') RETURNING "id"
+ ~ (0.000437) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000689) SELECT "id", "email" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000723) SELECT "id", "password_digest" FROM "users" WHERE "id" = 2 ORDER BY "id"
+ ~ default: rollback
+ ~ (0.000468) ROLLBACK
+ ~ default: begin
+ ~ (0.000116) BEGIN
+ ~ (0.000680) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000430) SELECT "id" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000437) INSERT INTO "users" ("email", "password_digest") VALUES ('test@test.com', '$2a$10$rm1A9Mnenkjc4bjSYPxn8ejVN5L8a54UsvpsT3Mz9aRnnabPxXCI6') RETURNING "id"
+ ~ (0.000683) SELECT "id", "email" FROM "users" WHERE "email" = 'test@test.com' ORDER BY "id" LIMIT 1
+ ~ (0.000298) SELECT "id", "password_digest" FROM "users" WHERE "id" = 3 ORDER BY "id"
+ ~ (0.000502) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000451) SELECT "id", "email" FROM "users" WHERE "id" = 3 LIMIT 1
+ ~ (0.000490) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ default: rollback
+ ~ (0.000512) ROLLBACK
+ ~ default: begin
+ ~ (0.000240) BEGIN
+ ~ (0.000346) SELECT COUNT(*) FROM "users"
+ ~ (0.000541) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000419) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000483) INSERT INTO "users" ("email", "password_digest") VALUES ('alice@example.com', '$2a$10$F8WgCn5b0nzPtqCFhJxh3eZ6L7B0bW9NHh64rrjkIRvEkZFTb0y5G') RETURNING "id"
+ ~ (0.000296) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000361) SELECT "id", "email" FROM "users" WHERE "id" = 4 LIMIT 1
+ ~ (0.000358) SELECT COUNT(*) FROM "users"
+ ~ (0.000639) SELECT "id", "email" FROM "users" ORDER BY "id" LIMIT 1
+ ~ default: rollback
+ ~ (0.000314) ROLLBACK
+ ~ default: begin
+ ~ (0.000198) BEGIN
+ ~ (0.000283) SELECT COUNT(*) FROM "users"
+ ~ (0.000474) SELECT "id" FROM "users" WHERE "email" = 'a@a.com' ORDER BY "id" LIMIT 1
+ ~ (0.000329) SELECT "id" FROM "users" WHERE "email" = 'a@a.com' ORDER BY "id" LIMIT 1
+ ~ (0.000348) SELECT COUNT(*) FROM "users"
+ ~ default: rollback
+ ~ (0.000300) ROLLBACK
+ ~ default: begin
+ ~ (0.000140) BEGIN
+ ~ (0.000296) SELECT COUNT(*) FROM "users"
+ ~ (0.000678) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000477) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000330) INSERT INTO "users" ("email", "password_digest") VALUES ('alice@example.com', '$2a$10$lgCKN/.gqiDmZIHAzoF5buC/pKxrOotk.zCLwzHGwuw08bfQmVfqa') RETURNING "id"
+ ~ (0.000555) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000481) SELECT "id", "email" FROM "users" WHERE "id" = 5 LIMIT 1
+ ~ (0.000391) SELECT COUNT(*) FROM "users"
+ ~ (0.000379) SELECT COUNT(*) FROM "users"
+ ~ (0.000596) SELECT "id", "email" FROM "users" WHERE "id" = 5 LIMIT 1
+ ~ (0.000702) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000333) SELECT "id" FROM "users" WHERE "email" = 'alice@example.com' ORDER BY "id" LIMIT 1
+ ~ (0.000304) SELECT "id", "email" FROM "users" WHERE "id" = 5 LIMIT 1
+ ~ (0.000309) SELECT COUNT(*) FROM "users"
+ ~ default: rollback
+ ~ (0.000467) ROLLBACK
+ ~ default: begin
+ ~ (0.000222) BEGIN
+ ~ (0.000296) SELECT COUNT(*) FROM "links"
+ ~ (0.000317) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com/') RETURNING "id"
+ ~ (0.000315) SELECT COUNT(*) FROM "links"
+ ~ (0.000219) SELECT "id", "title", "url" FROM "links" ORDER BY "id" LIMIT 1
+ ~ (0.000896) SELECT "tags"."id", "tags"."text" FROM "tags" INNER JOIN "link_tags" ON "tags"."id" = "link_tags"."tag_id" INNER JOIN "links" ON "link_tags"."link_id" = "links"."id" WHERE "link_tags"."link_id" = 4 GROUP BY "tags"."id", "tags"."text" ORDER BY "tags"."id"
+ ~ (0.000328) SELECT "link_id", "tag_id" FROM "link_tags" WHERE "link_id" = 4 ORDER BY "link_id", "tag_id"
+ ~ (0.000300) DELETE FROM "links" WHERE "id" = 4
+ ~ (0.000188) SELECT COUNT(*) FROM "links"
+ ~ default: rollback
+ ~ (0.000096) ROLLBACK
+ ~ default: begin
+ ~ (0.000091) BEGIN
+ ~ (0.000348) SELECT "id", "text" FROM "tags" WHERE "text" = 'education' ORDER BY "id" LIMIT 1
+ ~ (0.000296) INSERT INTO "tags" ("text") VALUES ('education') RETURNING "id"
+ ~ (0.000375) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ (0.000460) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 5 AND "tag_id" = 3) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000302) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (5, 3)
+ ~ (0.000342) SELECT "id", "text" FROM "tags" WHERE "text" = 'search' ORDER BY "id" LIMIT 1
+ ~ (0.000293) INSERT INTO "tags" ("text") VALUES ('search') RETURNING "id"
+ ~ (0.000381) INSERT INTO "links" ("title", "url") VALUES ('Google', 'http://www.google.com') RETURNING "id"
+ ~ (0.000434) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 6 AND "tag_id" = 4) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000213) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (6, 4)
+ ~ (0.000310) SELECT "id", "text" FROM "tags" WHERE "text" = 'search' ORDER BY "id" LIMIT 1
+ ~ (0.000386) INSERT INTO "links" ("title", "url") VALUES ('Bing', 'http://www.bing.com') RETURNING "id"
+ ~ (0.000432) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 7 AND "tag_id" = 4) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000242) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (7, 4)
+ ~ (0.000342) SELECT "id", "text" FROM "tags" WHERE "text" = 'education' ORDER BY "id" LIMIT 1
+ ~ (0.000450) INSERT INTO "links" ("title", "url") VALUES ('Code.org', 'http://www.code.org') RETURNING "id"
+ ~ (0.000362) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 8 AND "tag_id" = 3) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000331) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (8, 3)
+ ~ (0.000369) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ default: rollback
+ ~ (0.000319) ROLLBACK
+ ~ default: begin
+ ~ (0.000110) BEGIN
+ ~ (0.000406) SELECT "id", "text" FROM "tags" WHERE "text" = 'education' ORDER BY "id" LIMIT 1
+ ~ (0.000324) INSERT INTO "tags" ("text") VALUES ('education') RETURNING "id"
+ ~ (0.000431) INSERT INTO "links" ("title", "url") VALUES ('Makers Academy', 'http://www.makersacademy.com') RETURNING "id"
+ ~ (0.000483) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 9 AND "tag_id" = 5) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000443) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (9, 5)
+ ~ (0.000414) SELECT "id", "text" FROM "tags" WHERE "text" = 'search' ORDER BY "id" LIMIT 1
+ ~ (0.000345) INSERT INTO "tags" ("text") VALUES ('search') RETURNING "id"
+ ~ (0.000460) INSERT INTO "links" ("title", "url") VALUES ('Google', 'http://www.google.com') RETURNING "id"
+ ~ (0.000345) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 10 AND "tag_id" = 6) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000313) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (10, 6)
+ ~ (0.000413) SELECT "id", "text" FROM "tags" WHERE "text" = 'search' ORDER BY "id" LIMIT 1
+ ~ (0.000378) INSERT INTO "links" ("title", "url") VALUES ('Bing', 'http://www.bing.com') RETURNING "id"
+ ~ (0.000512) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 11 AND "tag_id" = 6) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000331) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (11, 6)
+ ~ (0.000344) SELECT "id", "text" FROM "tags" WHERE "text" = 'education' ORDER BY "id" LIMIT 1
+ ~ (0.000386) INSERT INTO "links" ("title", "url") VALUES ('Code.org', 'http://www.code.org') RETURNING "id"
+ ~ (0.000483) SELECT "link_id", "tag_id" FROM "link_tags" WHERE ("link_id" = 12 AND "tag_id" = 5) ORDER BY "link_id", "tag_id" LIMIT 1
+ ~ (0.000350) INSERT INTO "link_tags" ("link_id", "tag_id") VALUES (12, 5)
+ ~ (0.000466) SELECT "id", "text" FROM "tags" WHERE "text" = 'search' ORDER BY "id" LIMIT 1
+ ~ (0.000753) SELECT "links"."id", "links"."title", "links"."url" FROM "links" INNER JOIN "link_tags" ON "links"."id" = "link_tags"."link_id" INNER JOIN "tags" ON "link_tags"."tag_id" = "tags"."id" WHERE "link_tags"."tag_id" = 6 GROUP BY "links"."id", "links"."title", "links"."url" ORDER BY "links"."id"
+ ~ default: rollback
+ ~ (0.000292) ROLLBACK
