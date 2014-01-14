@@ -47,6 +47,19 @@ function prepareNewLinkHandler() {
   });
 }
 
+function prepareFormHandler() {
+  var form = $('#container #ajax-form form');
+  form.submit(function(event) {    
+    var addLink = function(data) {
+      $('#links').prepend(data);
+    }
+    var data = form.serialize();
+    $.post(form.attr('action'), data, addLink);
+    event.preventDefault();
+  })
+}
+
+
 $(function() {
   animateLinks();
   addFavouritesHandler();
