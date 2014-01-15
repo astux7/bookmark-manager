@@ -20,3 +20,5 @@ use Rack::Flash
 enable :sessions
 set :partial_template_engine, :erb
 set :session_secret, 'super secret'
+set :public_folder, 'public'
+set :static, true
