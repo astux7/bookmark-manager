@@ -14,9 +14,13 @@ end
 task :auto_migrate do
   # To force the creation of all tables as they are 
   # described in your models, even if this
-  # may lead to data loss, use auto_migrate:
+  # leads to data loss, use auto_migrate:
   DataMapper.auto_migrate!
-  puts "Auto-migrate complete (data could have been lost)"
+  puts "Auto-migrate complete (data was lost)"
 end
 # Finally, don't forget that before you do any of that stuff, 
 # you need to create a database first.
+
+task :test do
+  system "rspec 2>/dev/null"
+end

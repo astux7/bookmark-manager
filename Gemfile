@@ -7,6 +7,7 @@ gem 'rack-flash3' #for showing flash messages for user
 gem 'data_mapper'  #data mapper with sinatra and postgress
 gem 'dm-postgres-adapter' #adapter to work with postgress
 gem 'bcrypt-ruby' #generate password hash
+gem 'poltergeist' #To load website in memory, capybara needs a "driver"
 group :development, :test do
   gem "rspec"  #testing server side
   gem 'capybara' #testing client side

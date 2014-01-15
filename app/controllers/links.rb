@@ -11,5 +11,5 @@ post '/links' do
 end
 
 get '/links/new' do
-	erb :"links/new"
+  erb :"links/new", :layout => !request.xhr?
 end

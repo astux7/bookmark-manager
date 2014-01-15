@@ -1,0 +1,37 @@
+Mon, 13 Jan 2014 11:54:31 GMT  ~  info  ~  Logfile created
+ ~ (0.000235) SET backslash_quote = off
+ ~ (0.000098) SET standard_conforming_strings = on
+ ~ (0.000077) SET client_min_messages = warning
+ ~ (0.001576) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000336) SET backslash_quote = off
+ ~ (0.000106) SET standard_conforming_strings = on
+ ~ (0.000078) SET client_min_messages = warning
+ ~ (0.001608) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000329) SET backslash_quote = off
+ ~ (0.000141) SET standard_conforming_strings = on
+ ~ (0.000122) SET client_min_messages = warning
+ ~ (0.001701) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000357) SET backslash_quote = off
+ ~ (0.000109) SET standard_conforming_strings = on
+ ~ (0.000078) SET client_min_messages = warning
+ ~ (0.001667) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000244) SET backslash_quote = off
+ ~ (0.000117) SET standard_conforming_strings = on
+ ~ (0.000083) SET client_min_messages = warning
+ ~ (0.001640) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000338) SET backslash_quote = off
+ ~ (0.000126) SET standard_conforming_strings = on
+ ~ (0.000082) SET client_min_messages = warning
+ ~ (0.001823) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000307) SET backslash_quote = off
+ ~ (0.000097) SET standard_conforming_strings = on
+ ~ (0.000076) SET client_min_messages = warning
+ ~ (0.001628) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000279) SET backslash_quote = off
+ ~ (0.000125) SET standard_conforming_strings = on
+ ~ (0.000097) SET client_min_messages = warning
+ ~ (0.001726) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
+ ~ (0.000280) SET backslash_quote = off
+ ~ (0.000094) SET standard_conforming_strings = on
+ ~ (0.000075) SET client_min_messages = warning
+ ~ (0.001813) SELECT "id", "title", "url" FROM "links" ORDER BY "id"
