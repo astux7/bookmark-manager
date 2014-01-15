@@ -6,12 +6,17 @@ To run:
 > rake auto_migrate
 ```
 ```ruby
+> rake auto_upgrade
+```
+```ruby
 > shotgun -p 4545
 ```
 
 // in browser localhost:4545
 
+HEROKU
 
+```ruby
   519  heroku login
   520  heroku apps:create basta-bookmark
   532  heroku run rake auto_migrate
@@ -31,3 +36,8 @@ To run:
   552  heroku run rake auto_migrate
   554  git push heroku master
   555  heroku open
+
+
+don't forget to put to heroku addon posgress heroku addons:add heroku-postgresql and do this command
+
+```
