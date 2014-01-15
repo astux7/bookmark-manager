@@ -3,6 +3,7 @@ ENV["RACK_ENV"] = 'test' # because we need to know what database to work with
 require './app/server' 
 require 'database_cleaner'
 require 'capybara/rspec'
+require 'capybara/poltergeist'
 # require 'sinatra'  #if u require here sinatra the view will look in this file
 
 

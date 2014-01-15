@@ -159,7 +159,7 @@ form {
     width: 400px;
   }
 
-footer {
+footer  {
   display: flex;
   background-color: rgba(0,0,0,0.2);
   height: 70px; /* because of the sticky footer */
@@ -185,6 +185,6 @@ footer {
   }
 
   /* http://ryanfait.com/resources/footer-stick-to-bottom-of-page/ */
-  .footer, .push {
+  footer, .push {
     height: 70px;
   }
